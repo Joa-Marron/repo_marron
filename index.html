@@ -9,100 +9,123 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
-  <div class="grilla wrap">
-    <header class="header flex">
-      <a href="./index.html"><img class="header__logo" src="./media/logoTrans.png" alt="Logo"></a>
-      <nav class="nav" id="nav">
-        <ul class="nav__lista">
-                  <li><a class="dropdown-item" href="./pages/nuestrahistoria.html">Nuestra historia</a></li>
-                  <li><a class="dropdown-item" href="./pages/productos.html">Productos</a></li>
-                  <li><a class="dropdown-item" href="./pages/preguntasfrecuentes.html">Preguntas frecuentes</a></li>
-                  <li><a class="dropdown-item" href="./pages/contactos.html">Contactos</a></li>
-       </ul>
-       </nav>
-    </header>
+  <div class="grilla">
+    <header class="flex">
+      <nav class="navbar navbar-expand-lg navbar-light nav flex h6" id="nav">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html"><img class="logo" src="./media/logoHeader.png" alt="Logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDark"
+            aria-controls="navbarDark" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse show" id="navbarDark">
+            <ul class="navbar-nav me-auto mb-2 mb-xl-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+              <li>
+                <a class="nav-link" aria-current="page" href="./pages/nuestrahistoria.html">Nuestra historia</a>
+              </li>
+              <li>
+                <a class="nav-link" aria-current="page" href="./pages/productos.html">Productos</a>
+              </li>
+              <li>
+                <a class="nav-link" aria-current="page" href="./pages/preguntasfrecuentes.html">Preguntas frecuentes</a>
+              </li>
+              <li>
+                <a class="nav-link" aria-current="page" href="./pages/contactos.html">Contactos</a>
+              </li>
+            
+          
+          <form class="form" action="">
+            <input type="text" name="" id="">
+            <input type="submit" name="" value="Buscar" id="">
+          </form>
+        </ul>
+      
   </div>
+  </nav>
 
-  <div class="grilla wrap">
-    <main>
-      <h1 class="title">Happy Paws</h1>
+  </header>
 
-      <section>
-        <article class="article__one">
-          <img src="./media/Tunafoto.jpeg" alt="Gatito" height="500px" width="600px" />
-          <p class="main__text">
-            La relación entre los seres humanos y los animales es beneficiosa ya que nos ayuda a desarrollar distintas
-            aptitudes. Si desde pequeños les enseñamos a los niños a amar, cuidar y respetar a los animales, haremos
-            de ellos personas más emocionales y amorosas.
-          </p>
-          <p class="main__text">Los animales aportan emociones básicas para los pequeños de la casa, valores que, en
-            ocasiones, las propias
-            personas olvidan enseñar, como la empatía, el amor, respeto, responsabilidad, la fidelidad, entre otros.
+  <main>
+    <h1 class="title">Happy Paws</h1>
 
-            Pero además de los valores, los niños pueden obtener beneficios en sus vidas gracias a las mascotas, ya que
-            estos representan sentimientos de amor hacia ellos, también son esenciales para el desarrollo emocional de
-            los niños, las mascotas pueden ayudar a un buen desarrollo de la autoestima. </p>
-        </article>
-      </section>
-      <section>
-        <article class="article__two">
-          <iframe src="./media/Gatitavideo.mp4" frameborder="0" width="600px" height="500px"></iframe>
-          <p class="main__text">
-            El juego es fundamental desde el comienzo de la vida de nuestros animalitos. Aprenden a adoptar las posturas
-            agonísticas (dominancia y sumisión), a controlar la mordida, las conductas sexuales, la conducta de caza,
-            además de cómo coordinar los movimientos, saltos y caídas.
-          </p>
-          <p class="main__text">El juego es esencial para que un cachorro se desarrolle de manera equilibrada conductual
-            y
-            fisiológicamente hasta la etapa de adulto. Los animales que no
-            han jugado en su infancia pueden desarrollar problemas de comportamiento como falta del control en la
-            mordida,
-            agresividad en el juego, juego descontrolado, intolerancia al contacto, miedos, destrucción en casa, etc. Un
-            error frecuente es la elección de juguetes con partes que se pueden romper y tragar. </p>
+    <section>
+      <article class="article__one">
+        <img src="./media/Tunafoto.jpeg" alt="Gatito" height="500px" width="600px" />
+        <p class="main__text">
+          La relación entre los seres humanos y los animales es beneficiosa ya que nos ayuda a desarrollar distintas
+          aptitudes. Si desde pequeños les enseñamos a los niños a amar, cuidar y respetar a los animales, haremos
+          de ellos personas más emocionales y amorosas.
+        </p>
+        <p class="main__text">Los animales aportan emociones básicas para los pequeños de la casa, valores que, en
+          ocasiones, las propias
+          personas olvidan enseñar, como la empatía, el amor, respeto, responsabilidad, la fidelidad, entre otros.
 
-          <p class="main__text">Desde Happy Paws les ofrecemos el asesoramiento necesario para que nuestro amigos
-            animales
-            tengan
-            la mejor y más sana diversión.</p>
-        </article>
-      </section>
-    </main>
-  </div>
-  <div class="grilla wrap">
-    <footer>
+          Pero además de los valores, los niños pueden obtener beneficios en sus vidas gracias a las mascotas, ya que
+          estos representan sentimientos de amor hacia ellos, también son esenciales para el desarrollo emocional de
+          los niños, las mascotas pueden ayudar a un buen desarrollo de la autoestima. </p>
+      </article>
+    </section>
+    <section>
+      <article class="article__two">
+        <iframe src="./media/Gatitavideo.mp4" frameborder="0" width="600px" height="500px"></iframe>
+        <p class="main__text">
+          El juego es fundamental desde el comienzo de la vida de nuestros animalitos. Aprenden a adoptar las posturas
+          agonísticas (dominancia y sumisión), a controlar la mordida, las conductas sexuales, la conducta de caza,
+          además de cómo coordinar los movimientos, saltos y caídas.
+        </p>
+        <p class="main__text">El juego es esencial para que un cachorro se desarrolle de manera equilibrada conductual
+          y
+          fisiológicamente hasta la etapa de adulto. Los animales que no
+          han jugado en su infancia pueden desarrollar problemas de comportamiento como falta del control en la
+          mordida,
+          agresividad en el juego, juego descontrolado, intolerancia al contacto, miedos, destrucción en casa, etc. Un
+          error frecuente es la elección de juguetes con partes que se pueden romper y tragar. </p>
 
-      <div>
-        <h2 class="subtitle__footer">Visitanos en Funes</h2>
-        <iframe class="iframe__footer"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3349.138732169581!2d-60.816037085293935!3d-32.92093267791611!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b64daca9c3b6ad%3A0xf785ea2c86fc21d0!2sRN9%201832%2C%20Funes%2C%20Santa%20Fe!5e0!3m2!1ses-419!2sar!4v1651171652765!5m2!1ses-419!2sar"
-          width="250px" height="150px" style="border:1px solid black;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-      <div>
-        <h2 class="subtitle__footer">Seguinos en Instagram y hacé tu pedido por whatsapp</h2>
-        <a href="https://www.instagram.com/happypawsfunes/" target="_blank"><img class="link__ig"
-            src="./media/logoIgTrans.png" alt="Link Instagram"></a>
-        <a href="http://api.whatsapp.com/send?phone=3413777699" target="_blank"><img class="link__wp"
-            src="./media/wpTrans.png" alt="Link de whatsapp"></a>
-      </div>
-      <div>
-        <a href="./index.html">Inicio</a>
-        <a href="./pages/nuestrahistoria.html">Nuestra historia</a></li>
-        <a href="./pages/productos.html">Productos</a></li>
-        <a href="./pages/preguntasfrecuentes.html">Preguntas frecuentes</a></li>
-        <a href="./pages/contactos.html">Contactos</a></li>
-      </div>
+        <p class="main__text">Desde Happy Paws les ofrecemos el asesoramiento necesario para que nuestro amigos
+          animales
+          tengan
+          la mejor y más sana diversión.</p>
+      </article>
+    </section>
+  </main>
 
 
-    </footer>
+  <footer>
+
+    <div>
+      <h2 class="subtitle__footer">Visitanos en Funes</h2>
+      <iframe class="iframe__footer"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3349.138732169581!2d-60.816037085293935!3d-32.92093267791611!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b64daca9c3b6ad%3A0xf785ea2c86fc21d0!2sRN9%201832%2C%20Funes%2C%20Santa%20Fe!5e0!3m2!1ses-419!2sar!4v1651171652765!5m2!1ses-419!2sar"
+        width="250px" height="150px" style="border:1px solid black;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div>
+      <h2 class="subtitle__footer">Seguinos en Instagram y hacé tu pedido por whatsapp</h2>
+      <a href="https://www.instagram.com/happypawsfunes/" target="_blank"><img class="link__ig"
+          src="./media/logoIgTrans.png" alt="Link Instagram"></a>
+      <a href="http://api.whatsapp.com/send?phone=3413777699" target="_blank"><img class="link__wp"
+          src="./media/wpTrans.png" alt="Link de whatsapp"></a>
+    </div>
+    <div>
+      <a href="./index.html">Inicio</a>
+      <a href="./pages/nuestrahistoria.html">Nuestra historia</a></li>
+      <a href="./pages/productos.html">Productos</a></li>
+      <a href="./pages/preguntasfrecuentes.html">Preguntas frecuentes</a></li>
+      <a href="./pages/contactos.html">Contactos</a></li>
+    </div>
+
+
+  </footer>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
   </script>
-  </div>
 </body>
 
 </html>

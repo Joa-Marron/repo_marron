@@ -1,16 +1,24 @@
 /* -------------------Proyecto creado usando enfoque mobile first------------------- */
+
+/*------------------------------General---------------------------------*/
 * {
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
 }
 
 image {
     max-width: 100%;
+    max-height: 100%;
+    border-radius: 16px;
+    object-fit: cover;
 }
 
 .flex {
     display: flex;
+    justify-content: space-evenly;
 }
 
 .wrap {
@@ -19,14 +27,16 @@ image {
 }
 
 
+/*------------------------------------Grilla-----------------------------------------*/
 
 .grilla {
     display: grid;
     grid-template-areas: "header header"
         "main main"
+        "main main"
         "footer footer";
-    grid-template-columns: 50% 50%;
-    grid-template-rows: repeat(3 1fr);
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4 1fr);
     column-gap: 15px;
     row-gap: 15px;
 }
@@ -41,7 +51,7 @@ main {
 
 footer {
     grid-area: footer;
-}
+} 
 
 
 /* ---------------------------Font----------------------------- */
@@ -65,81 +75,61 @@ footer {
 @font-face {
     font-family: alleyGarden;
     src: url(../fonts/aAlleyGarden.otf);
-}
+} 
 
 
 
 /* ---------------------------------Header------------------------- */
 
-
-.nav__font {
-    font-family: puppy love;
-    size: 20px;
-    height: auto;
-    width: auto;
+header {
+    background-color: #b388eb;
+    background-size: 30%; 
+    border-bottom: 3px solid rgb(100, 94, 94);
+    
 }
 
-.header {
-    display: flex;
-    align-items: flex-start;
-    text-align: center;
-    padding: 15px;
-    border-bottom: 4px solid lightslategrey;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    background-image: url(../media/backgroundHeader.jpg);
-    background-size: 30%;
-}
-
-.header__logo {
-    width: 200px;
-    height: 200px;
-    margin-left: 7%;
+.logo{
+    height: 100px;
+    width: 150px;
     padding: 0%;
+    
+    
 }
 
-.nav {
-    list-style: none;
-    margin-top: 10px;
-    padding-top: 10px;
-    padding-bottom: 0%;
-    align-items: flex-start;
-}
-
-.nav li a {
-    color: #FFFFFF;
-    background-color: black;
-    text-decoration: none;
-    text-transform: uppercase;
-    padding: 10px;
-    margin: 15px;
-}
-
-.nav li {
-    display: flex;
+.nav{
     display: inline-block;
-    align-content: space-between;
+    }
+
+li a{
+    text-transform: uppercase;
+    /* background-color: #cfbaf0;
+    border: 1px solid black;*/
+    margin-left: 5px;
+    margin-right: 5px;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    
+    
+    }
+
+li a:hover{
+    background-color: #7b2cbf;
+    
 }
 
-
-.nav li a:hover {
-    background-color: rgb(214, 87, 187);
-    transition: all .3s;
+.form{
+    margin-left: 60px;
 }
-
 
 
 /* ----------------Body------------------------- */
 
 body {
-    background-image: url(../media/backgroundBody.jpg);
-    background-size: 20%;
-    border: 2px solid rgb(3, 0, 0);
-
-}
+    background-color: #fdc5f5;
+    }
 
 /* ------------------Main-------------------------- */
-
+/* 
 main {
     padding: 0;
     margin: 15px;
@@ -237,10 +227,10 @@ main {
     font-family: alleyGarden;
     font-size: 20px;
     margin-left: 20px;
-}
+} */
 
 /* ----------------Footer----------------------- */
-
+/* 
 footer {
     align-self: center;
     max-width: 100%;
@@ -279,12 +269,12 @@ footer {
     width: 150px;
     padding: 0%;
     margin: 0%;
-}
+} */
 
 
 
 /*................MEDIAS QUERIES.........................*/
-
+/* 
 @media screen and (min-width:768px) {
     .grilla {
         display: grid;
@@ -300,21 +290,20 @@ footer {
     header {
         grid-area: header;
     }
-    
+
     main {
         grid-area: main;
     }
-    
+
     footer {
         grid-area: footer;
     }
 
-    .header__logo{
+    .header__logo {
         display: flex;
         height: 200px;
         width: 200px;
         padding: 0%;
     }
-  
-}
 
+} */
