@@ -173,16 +173,7 @@ main {
      
 }
 
-.main__subtitle {
-    font-family: Roboto-light;
-    padding: 0%;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-size: 30px;
-    text-align: center;
-}
-
-.nh__subtitle{
+.main__subtitle{
     font-family: Roboto-bold;
     padding: 0%;
     margin: 5px;
@@ -191,7 +182,7 @@ main {
     }
 
 .border__subtitle{
-    height: 120px;
+    max-height: 100%;
     width: 200px;
     padding: 5px;
     margin: 10px;
@@ -199,6 +190,14 @@ main {
     border-top: 2px solid black;
     justify-content:center;
 }
+
+.border__text{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0%;
+}
+
+
 
 .list__interes{
     list-style-type: circle;
@@ -208,16 +207,8 @@ main {
     height: 200px;
     width: 200px;
 }
-.main__subtitleconsult {
-    font-family: puppy love;
-    padding: 0%;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-size: 30px;
-    text-align: center;
-}
 
-.img__cat {
+.img__animal {
     border-radius: 50%;
     border: 5px solid #393d3f;
     height: 300px;
@@ -245,22 +236,17 @@ main {
 
 .main__product {
     height: 300px;
-    width: 250px;
+    width: 300px;
     padding: 0%;
-    margin: 15px;
-    border: 1px solid black;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 2px solid black;
     box-shadow: 10px 10px 5px rgb(161, 154, 154);
-    flex-direction: row;
-}
+    justify-content: space-between;
+    }
 
-.product__bed2 {
-    height: 300px;
-    width: 350px;
-    padding: 0%;
-    margin: 15px;
-    border: 1px solid black;
-    box-shadow: 10px 10px 5px rgb(161, 154, 154);
-}
+
+    
 
 .main__perroresponde {
     height: 300px;
@@ -353,15 +339,29 @@ footer {
        flex-direction: row;
    }
 
-   #nh__comienzos{
+   #interes__vacunas{
        display: flex;
        flex-direction: row;
    }
 
-   #nh__objetivos{
+   #interes__pirotecnia{
        display: flex;
        flex-direction: row;
    }
 
+   #productos__camas{
+    display: flex;
+    flex-direction: row;
+}
+
+#productos__mordillos{
+    display: flex;
+    flex-direction: row;
+}
+
+#productos__rascadores{
+    display: flex;
+    flex-direction: row;
+}
   
 }
