@@ -87,6 +87,10 @@ footer {
     src: url(../fonts/Roboto-Medium.ttf);
 }
 
+@font-face{
+    font-family: Roboto-bold;
+    src: url(../fonts/Roboto-BoldCondensedItalic.ttf);
+}
 /* ---------------------------------Header------------------------- */
 
 header {
@@ -178,6 +182,32 @@ main {
     text-align: center;
 }
 
+.nh__subtitle{
+    font-family: Roboto-bold;
+    padding: 0%;
+    margin: 5px;
+    text-align: center;
+    color: #480ca8;
+    }
+
+.border__subtitle{
+    height: 120px;
+    width: 200px;
+    padding: 5px;
+    margin: 10px;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    justify-content:center;
+}
+
+.list__interes{
+    list-style-type: circle;
+    }
+
+.img__interes{
+    height: 200px;
+    width: 200px;
+}
 .main__subtitleconsult {
     font-family: puppy love;
     padding: 0%;
@@ -322,4 +352,16 @@ footer {
        display: flex;
        flex-direction: row;
    }
+
+   #nh__comienzos{
+       display: flex;
+       flex-direction: row;
+   }
+
+   #nh__objetivos{
+       display: flex;
+       flex-direction: row;
+   }
+
+  
 }
