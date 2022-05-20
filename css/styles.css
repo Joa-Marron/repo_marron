@@ -169,7 +169,7 @@ main {
     font-size: 25px;
     height: auto;
     width: auto;
-    color: #312244;
+    color: #5a189a;
      
 }
 
@@ -181,6 +181,13 @@ main {
     color: #480ca8;
     }
 
+.main__preguntas{
+        font-family: Roboto-light;
+        padding: 0%;
+        margin: 5px;
+        color: #9d4edd;
+        }
+
 .border__subtitle{
     max-height: 100%;
     width: 200px;
@@ -190,6 +197,15 @@ main {
     border-top: 2px solid black;
     justify-content:center;
 }
+
+.title__preguntas{
+    max-height: 100%;
+    width: 200px;
+    padding: 5px;
+    margin: 10px;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    }
 
 .border__text{
     margin-top: 20px;
