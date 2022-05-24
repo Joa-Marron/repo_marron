@@ -402,7 +402,7 @@ footer {
     }
 
     #productos__camas {
-        display: flex; 
+        display: flex;
         flex-direction: row;
     }
 
