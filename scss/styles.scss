@@ -1,0 +1,414 @@
+/* -------------------Proyecto creado usando enfoque mobile first------------------- */
+
+/*------------------------------General---------------------------------*/
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+image {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/*------------------------------------Grilla-----------------------------------------*/
+
+.grilla {
+    display: grid;
+    grid-template-areas: "header header"
+        "main main"
+        "main main"
+        "footer footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4 1fr);
+    column-gap: 15px;
+    row-gap: 15px;
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
+
+
+/* ---------------------------Font----------------------------- */
+
+@font-face {
+    font-family: puppy bellies;
+    src: url(../fonts/PuppyBellies.ttf);
+
+}
+
+@font-face {
+    font-family: puppy love;
+    src: url(../fonts/PuppyLove.otf);
+}
+
+@font-face {
+    font-family: alleyGarden;
+    src: url(../fonts/aAlleyGarden.otf);
+}
+
+@font-face {
+    font-family: Roboto-light;
+    src: url(../fonts/Roboto-Light.ttf);
+}
+
+@font-face {
+    font-family: Roboto-medium;
+    src: url(../fonts/Roboto-Medium.ttf);
+}
+
+@font-face {
+    font-family: Roboto-bold;
+    src: url(../fonts/Roboto-BoldCondensedItalic.ttf);
+}
+
+// @font-face{
+//     font-family: Wall notes;
+//     src: url(../fonts/Wall\ Notes.otf);
+// }
+
+// @font-face{
+//     font-family: Louis George;
+//     src: url(../fonts/Louis\ George\ Cafe.ttf);
+// }
+
+/* ---------------------------------Header------------------------- */
+
+header {
+    background-image: linear-gradient(to left, #a997df, #dccfec)
+}
+
+.border__header {
+    border-bottom: 3px solid black;
+}
+
+.logo {
+    height: 100px;
+    width: 150px;
+    padding: 0%;
+
+
+}
+
+.nav {
+    display: inline-block;
+}
+
+li a {
+    text-transform: uppercase;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+}
+
+li a:hover {
+    background-color: #fadde1;
+
+}
+
+.form {
+    margin-left: 60px;
+}
+
+
+/* ----------------Body------------------------- */
+
+body {
+    background-image: linear-gradient(to left,#f5f3f4,#d3d3d3);
+}
+
+/* ------------------Main-------------------------- */
+
+main {
+    padding: 0;
+    margin: 15px;
+}
+
+.title {
+    font-family: puppy bellies;
+    padding: 10px;
+    height: 80px;
+    width: 300px;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 40px;
+    text-transform: uppercase;
+    border: 2px dashed rgb(14, 12, 12);
+    background-image: linear-gradient(to left, #f1c0e8, #cfbaf0);
+    color: #3e1f47;
+}
+
+.container__title {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.main__text {
+    font-family: Roboto-light;
+    font-size: 25px;
+    height: auto;
+    width: auto;
+    color: #5a189a;
+
+}
+
+.container__index{
+    border: 3px solid  rgb(24, 21, 21);
+    box-shadow: 10px 10px 5px rgb(24, 21, 21);
+    max-height: 100%;
+    max-width: 60%;
+    justify-content: right;
+    padding: 10px;
+    margin-bottom: 50px;
+    background-image: linear-gradient(to left,#e6e6e9,#9999a1);
+}
+
+.container__index__video{
+    border: 3px solid  rgb(24, 21, 21);
+    box-shadow: 10px 10px 5px rgb(24, 21, 21);
+    max-height: 100%;
+    max-width: 80%;
+    justify-content: right;
+    padding: 10px;
+    margin-bottom: 50px;
+    background-image: linear-gradient(to left,#e6e6e9,#9999a1);
+}
+
+.main__subtitle {
+    font-family: Roboto-bold;
+    padding: 0%;
+    margin: 5px;
+    text-align: center;
+    color: #480ca8;
+}
+
+.main__preguntas {
+    font-family: Roboto-light;
+    padding: 0%;
+    margin: 5px;
+    color: #9d4edd;
+}
+
+.border__subtitle {
+    max-height: 100%;
+    max-width: 100%;
+    padding: 5px;
+    margin: 10px;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    justify-content: center;
+}
+
+.title__preguntas {
+    max-height: 100%;
+    width: 200px;
+    padding: 5px;
+    margin: 10px;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+}
+
+.border__text {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0%;
+}
+
+.list__interes {
+    list-style-type: circle;
+}
+
+.img__interes {
+    height: 200px;
+    width: 200px;
+}
+
+.img__animal {
+    border-radius: 50%;
+    border: 5px solid #393d3f;
+    height: 300px;
+    width: 300px;
+    margin: 10px;
+}
+
+.img__galaresponde {
+    border: 5px solid #393d3f;
+    height: 300px;
+    width: 300px;
+    margin: 10px;
+    justify-content: center;
+}
+
+
+.contacto__bloque{
+    border: 2px solid rgb(20, 3, 3);
+    box-shadow: 15px 15px 10px rgb(78, 69, 69);
+    max-height: 100%;
+   
+    padding: 10px;
+    margin-bottom: 40px;
+    background-image: linear-gradient(to left,#fff0f3, #ffccd5);
+}
+
+.input__contacto{
+    margin: 10px;
+}
+
+
+.video__cat {
+    height: 300px;
+    width: 350px;
+    margin: 20px;
+    margin-right: 30px;
+    border: 5px solid #393d3f;
+}
+
+.btn__relationship{
+    text-decoration: none;
+
+}
+
+.main__product {
+    height: 300px;
+    width: 300px;
+    padding: 0%;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 2px solid black;
+    box-shadow: 10px 10px 5px rgb(161, 154, 154);
+    justify-content: space-between;
+}
+
+.main__form {
+    display: flex;
+    flex-direction: column;
+    font-family: Louis George;
+    font-size: 25px;
+    align-items: flex-start;
+    margin-left: 20px;
+}
+
+.select__product{
+    width: 250px;
+}
+
+/* ----------------Footer----------------------- */
+footer {
+    border: 3px solid #343a40;
+    max-height: 100%;
+    max-width: 100%;
+    justify-content: center;
+}
+
+.degrade__footer {
+    background-image: linear-gradient(to left, #ced4da, #adb5bd);
+}
+
+.subtitle__footer {
+    font-family: Roboto-medium;
+    padding: 0%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    justify-items: center;
+
+}
+
+.iframe__footer {
+    align-items: center;
+}
+
+.link__ig {
+    height: 150px;
+    width: 150px;
+    padding: 0%;
+    justify-content: space-evenly;
+}
+
+.link__wp {
+    height: 150px;
+    width: 150px;
+    padding: 0%;
+    justify-content: space-evenly;
+
+}
+
+.link__footer {
+    justify-content: space-evenly;
+    background-color: #03071e;
+}
+
+.link {
+    text-decoration: none;
+    color: #ffcfd2;
+    background-color: #03071e;
+    margin: 2px;
+}
+
+/* 
+/*................MEDIAS QUERIES.........................*/
+
+@media screen and (min-width:1024px) {
+    #imagen__index {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #video__index {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #interes__vacunas {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #interes__pirotecnia {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #productos__camas {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #productos__mordillos {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #productos__rascadores {
+        display: flex;
+        flex-direction: row;
+    }
+
+}
