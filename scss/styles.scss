@@ -1,11 +1,11 @@
+/* -------------------Proyecto creado usando enfoque mobile first------------------- */
+
 @import "header";
 @import "main";
 @import "footer";
 @import "tipografia";
 @import "variables";
 
-
-/* -------------------Proyecto creado usando enfoque mobile first------------------- */
 
 /*------------------------------General---------------------------------*/
 * {
@@ -61,103 +61,12 @@ footer {
 }
 
 
-/* ---------------------------Font----------------------------- */
-
-@font-face {
-    font-family: puppy bellies;
-    src: url(../fonts/PuppyBellies.ttf);
-
-}
-
-@font-face {
-    font-family: puppy love;
-    src: url(../fonts/PuppyLove.otf);
-}
-
-@font-face {
-    font-family: alleyGarden;
-    src: url(../fonts/aAlleyGarden.otf);
-}
-
-@font-face {
-    font-family: Roboto-light;
-    src: url(../fonts/Roboto-Light.ttf);
-}
-
-@font-face {
-    font-family: Roboto-medium;
-    src: url(../fonts/Roboto-Medium.ttf);
-}
-
-@font-face {
-    font-family: Roboto-bold;
-    src: url(../fonts/Roboto-BoldCondensedItalic.ttf);
-}
-
-
-
-
 /* ----------------Body------------------------- */
 
 body {
     background-image: linear-gradient(to left,#f5f3f4,#d3d3d3);
 }
 
-
-/* ----------------Footer----------------------- */
-footer {
-    border: 3px solid #343a40;
-    max-height: 100%;
-    max-width: 100%;
-    justify-content: center;
-}
-
-.degrade__footer {
-    background-image: linear-gradient(to left, #ced4da, #adb5bd);
-}
-
-.subtitle__footer {
-    font-family: Roboto-medium;
-    padding: 0%;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    text-align: center;
-    justify-items: center;
-
-}
-
-.iframe__footer {
-    align-items: center;
-}
-
-.link__ig {
-    height: 150px;
-    width: 150px;
-    padding: 0%;
-    justify-content: space-evenly;
-}
-
-.link__wp {
-    height: 150px;
-    width: 150px;
-    padding: 0%;
-    justify-content: space-evenly;
-
-}
-
-.link__footer {
-    justify-content: space-evenly;
-    background-color: #03071e;
-}
-
-.link {
-    text-decoration: none;
-    color: #ffcfd2;
-    background-color: #03071e;
-    margin: 2px;
-}
-
-/* 
 /*................MEDIAS QUERIES.........................*/
 
 @media screen and (min-width:1024px) {
