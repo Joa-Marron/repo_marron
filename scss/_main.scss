@@ -3,125 +3,53 @@
 @import "tipografia";
 @import "variables";
 
-.index{
-    @media screen {
-        
+main {
+    .title {
+        font-family: puppy bellies;
+        padding: 10px;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 30px;
+        text-transform: uppercase;
+        background-image: linear-gradient(to left, #f1c0e8, #cfbaf0);
+        color: $titulo;
     }
-    padding: 0;
-    margin: 15px;
-.title {
-    font-family: puppy bellies;
-    padding: 10px;
-    justify-content: center;
-    text-align: center;
-    margin-bottom: 30px;
-    text-transform: uppercase;
-    background-image: linear-gradient(to left, #f1c0e8, #cfbaf0);
-    color: $titulo;
-}
-.container__index{
-    border: 3px solid  rgb(24, 21, 21);
-    box-shadow: 10px 10px 5px rgb(24, 21, 21);
-    max-height: 100%;
-    max-width: 50%;
-    justify-content: left;
-    padding: 10px;
-    margin-bottom: 50px;
-    background-image: linear-gradient(to left,#f72585,#f1c0e8);
-    
+
+    .container__index {
+        border-radius: 50%;
+        border: 3px solid rgb(24, 21, 21);
+        box-shadow: 10px 10px 5px rgb(24, 21, 21);
+        max-height: 100%;
+        max-width: 50%;
+        justify-content: left;
+        padding: 10px;
+        margin-bottom: 50px;
+        background-image: linear-gradient(to left, #f72585, #f1c0e8);
+    }
+
     .main__text {
         font-family: Roboto-light;
         color: $texto;
         padding: 30px;
         margin: 15px;
-                }
-                //¿por qué no puedo cambiar el borde de la imagen?//
-        .img__animal {
-            border-radius: 50%;
-            border: 5px solid #393d3f;
-            margin: 10px;
-        }
-}
-.bloque__juegos{
-    .video__cat {
-        height: 300px;
-        width: 350px;
-        margin: 20px;
-        border: 10px solid #393d3f;
     }
-.container__index{
-    border: 3px solid  rgb(24, 21, 21);
-    box-shadow: 10px 10px 5px rgb(24, 21, 21);
-    max-height: 100%;
-    max-width: 60%;
-    justify-content: right;
-    padding: 10px;
-    margin: 50px;
-    background-image: linear-gradient(to left,#f72585,#f1c0e8);
-    .main__text {
-        font-family: Roboto-light;
-            color: $texto;
-            padding: 30px;
-        }
-    
-}
-}
-.interes{
-   .title {
-        font-family: puppy bellies;
-        padding: 10px;
-        height: 80px;
-        width: 300px;
-        justify-content: center;
-        text-align: center;
-        margin-bottom: 30px;
-        font-size: 40px;
-        text-transform: uppercase;
-        background-image: linear-gradient(to left, #f1c0e8, #cfbaf0);
-        color: $titulo;
-    }
-    .border__subtitle {
-        max-height: 100%;
-        max-width: 100%;
-        padding: 5px;
-        margin: 10px;
-        border-bottom: 2px solid black;
-        border-top: 2px solid black;
-        justify-content: center;
-    .main__subtitle {
-        font-family: Roboto-bold;
-        padding: 0%;
-        margin: 5px;
-        text-align: center;
-        color: $subtitulo;
-    }
-}
-        .img__animal {
+
+
+    .img__redondo {
         border-radius: 50%;
         border: 5px solid #393d3f;
         margin: 10px;
     }
-    .main__text {
-        font-family: Roboto-light;
-        color: $texto;
-        padding: 30px;
-    }
+
+    .bloque__juegos {
+        .video__cat {
+            height: 300px;
+            width: 350px;
+            margin: 20px;
+            border: 10px solid #393d3f;
+        }
     }
 
-.productos{
-    .title {
-        font-family: puppy bellies;
-        padding: 10px;
-        height: 80px;
-        width: 300px;
-        justify-content: center;
-        text-align: center;
-        margin-bottom: 30px;
-        font-size: 40px;
-        text-transform: uppercase;
-        background-image: linear-gradient(to left, #f1c0e8, #cfbaf0);
-        color: $titulo;
-    }
     .border__subtitle {
         max-height: 100%;
         max-width: 100%;
@@ -130,106 +58,7 @@
         border-bottom: 2px solid black;
         border-top: 2px solid black;
         justify-content: center;
-    
-    .main__subtitle {
-        font-family: Roboto-bold;
-        padding: 0%;
-        margin: 5px;
-        text-align: center;
-        color: $subtitulo;
-    }
-}
-    .border__text {
-        margin-top: 20px;
-        margin-bottom: 20px;
-        padding: 0%;
-    
-    .main__text {
-        font-family: Roboto-light;
-        color: $texto;
-        padding: 30px;
-    }
-}
-    .main__product {
-    height: 300px;
-    width: 300px;
-    padding: 0%;
-    margin-left: 10px;
-    margin-right: 10px;
-    border: 2px solid black;
-    box-shadow: 10px 10px 5px rgb(161, 154, 154);
-    justify-content: space-between;
-}
-}
 
-.preguntas__frecuentes{
-    .title {
-        font-family: puppy bellies;
-        padding: 10px;
-        height: 80px;
-        width: 300px;
-        justify-content: center;
-        text-align: center;
-        margin-bottom: 30px;
-        font-size: 40px;
-        text-transform: uppercase;
-        background-image: linear-gradient(to left, #f1c0e8, #cfbaf0);
-        color: $titulo;
-    }
-    .border__subtitle {
-        max-height: 100%;
-        max-width: 100%;
-        padding: 5px;
-        margin: 10px;
-        border-bottom: 2px solid black;
-        border-top: 2px solid black;
-        justify-content: center;
-    
-    .main__subtitle {
-        font-family: Roboto-bold;
-        padding: 0%;
-        margin: 5px;
-        text-align: center;
-        color: $subtitulo;
-    }
-}
-.main__text {
-    font-family: Roboto-light;
-        color: $texto;
-        padding: 30px;
-}
-}
-
-.contacto{
-    .title {
-        font-family: puppy bellies;
-        padding: 10px;
-        height: 80px;
-        width: 300px;
-        justify-content: center;
-        text-align: center;
-        margin-bottom: 30px;
-        font-size: 40px;
-        text-transform: uppercase;
-        background-image: linear-gradient(to left, #f1c0e8, #cfbaf0);
-        color: $titulo;
-    }
-    .contacto__bloque{
-        border: 2px solid rgb(20, 3, 3);
-        box-shadow: 15px 15px 10px rgb(78, 69, 69);
-        max-height: 100%;
-        padding: 10px;
-        margin-bottom: 40px;
-        background-image: linear-gradient(to left,#fff0f3, #ffccd5);
-        .border__subtitle {
-            max-height: 100%;
-            max-width: 100%;
-            padding: 5px;
-            margin: 10px;
-            border-bottom: 2px solid black;
-            border-top: 2px solid black;
-            justify-content: center;
-        
         .main__subtitle {
             font-family: Roboto-bold;
             padding: 0%;
@@ -238,43 +67,51 @@
             color: $subtitulo;
         }
     }
-    .img__galaresponde {
-        border: 5px solid #393d3f;
+
+    .main__product {
         height: 300px;
         width: 300px;
-        margin: 10px;
-        justify-content: center;
+        padding: 0%;
+        margin-left: 10px;
+        margin-right: 10px;
+        border: 2px solid black;
+        box-shadow: 10px 10px 5px rgb(161, 154, 154);
+        justify-content: space-between;
     }
-    .main__form {
-        display: flex;
-        flex-direction: column;
-        font-family: Roboto-light;
-        font-size: 25px;
-        align-items: flex-start;
-        margin-left: 20px;
-        .select__product{
-            width: 250px;
+
+
+    .contacto__bloque {
+        border: 2px solid rgb(20, 3, 3);
+        box-shadow: 15px 15px 10px rgb(78, 69, 69);
+        max-height: 100%;
+        padding: 10px;
+        margin-bottom: 40px;
+        background-image: linear-gradient(to left, #fff0f3, #ffccd5);
+
+
+        .img__galaresponde {
+            border: 5px solid #393d3f;
+            height: 300px;
+            width: 300px;
+            margin: 10px;
+            justify-content: center;
+        }
+
+        .main__form {
+            display: flex;
+            flex-direction: column;
+            font-family: Roboto-light;
+            font-size: 25px;
+            align-items: flex-start;
+            margin-left: 20px;
+
+            .select__product {
+                width: 250px;
+            }
+        }
+
+        .input__contacto {
+            margin: 10px;
         }
     }
-    .input__contacto{
-        margin: 10px;
-    }
 }
-}
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -97,211 +97,93 @@ footer {
   font-family: Roboto-bold;
   src: url(../fonts/Roboto-BoldCondensedItalic.ttf); }
 
-.index {
-  padding: 0;
+main .title {
+  font-family: puppy bellies;
+  padding: 10px;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  background-image: linear-gradient(to left, #f1c0e8, #cfbaf0);
+  color: #3e1f47; }
+
+main .container__index {
+  border-radius: 50%;
+  border: 3px solid #181515;
+  box-shadow: 10px 10px 5px #181515;
+  max-height: 100%;
+  max-width: 50%;
+  justify-content: left;
+  padding: 10px;
+  margin-bottom: 50px;
+  background-image: linear-gradient(to left, #f72585, #f1c0e8); }
+
+main .main__text {
+  font-family: Roboto-light;
+  color: #5a189a;
+  padding: 30px;
   margin: 15px; }
-  .index .title {
-    font-family: puppy bellies;
-    padding: 10px;
-    justify-content: center;
-    text-align: center;
-    margin-bottom: 30px;
-    text-transform: uppercase;
-    background-image: linear-gradient(to left, #f1c0e8, #cfbaf0);
-    color: #3e1f47; }
-  .index .container__index {
-    border: 3px solid #181515;
-    box-shadow: 10px 10px 5px #181515;
-    max-height: 100%;
-    max-width: 50%;
-    justify-content: left;
-    padding: 10px;
-    margin-bottom: 50px;
-    background-image: linear-gradient(to left, #f72585, #f1c0e8); }
-    .index .container__index .main__text {
-      font-family: Roboto-light;
-      color: #5a189a;
-      padding: 30px;
-      margin: 15px; }
-    .index .container__index .img__animal {
-      border-radius: 50%;
-      border: 5px solid #393d3f;
-      margin: 10px; }
-  .index .bloque__juegos .video__cat {
-    height: 300px;
-    width: 350px;
-    margin: 20px;
-    border: 10px solid #393d3f; }
-  .index .bloque__juegos .container__index {
-    border: 3px solid #181515;
-    box-shadow: 10px 10px 5px #181515;
-    max-height: 100%;
-    max-width: 60%;
-    justify-content: right;
-    padding: 10px;
-    margin: 50px;
-    background-image: linear-gradient(to left, #f72585, #f1c0e8); }
-    .index .bloque__juegos .container__index .main__text {
-      font-family: Roboto-light;
-      color: #5a189a;
-      padding: 30px; }
-  .index .interes .title {
-    font-family: puppy bellies;
-    padding: 10px;
-    height: 80px;
-    width: 300px;
-    justify-content: center;
-    text-align: center;
-    margin-bottom: 30px;
-    font-size: 40px;
-    text-transform: uppercase;
-    background-image: linear-gradient(to left, #f1c0e8, #cfbaf0);
-    color: #3e1f47; }
-  .index .interes .border__subtitle {
-    max-height: 100%;
-    max-width: 100%;
-    padding: 5px;
-    margin: 10px;
-    border-bottom: 2px solid black;
-    border-top: 2px solid black;
-    justify-content: center; }
-    .index .interes .border__subtitle .main__subtitle {
-      font-family: Roboto-bold;
-      padding: 0%;
-      margin: 5px;
-      text-align: center;
-      color: #480ca8; }
-  .index .interes .img__animal {
-    border-radius: 50%;
-    border: 5px solid #393d3f;
-    margin: 10px; }
-  .index .interes .main__text {
-    font-family: Roboto-light;
-    color: #5a189a;
-    padding: 30px; }
-  .index .productos .title {
-    font-family: puppy bellies;
-    padding: 10px;
-    height: 80px;
-    width: 300px;
-    justify-content: center;
-    text-align: center;
-    margin-bottom: 30px;
-    font-size: 40px;
-    text-transform: uppercase;
-    background-image: linear-gradient(to left, #f1c0e8, #cfbaf0);
-    color: #3e1f47; }
-  .index .productos .border__subtitle {
-    max-height: 100%;
-    max-width: 100%;
-    padding: 5px;
-    margin: 10px;
-    border-bottom: 2px solid black;
-    border-top: 2px solid black;
-    justify-content: center; }
-    .index .productos .border__subtitle .main__subtitle {
-      font-family: Roboto-bold;
-      padding: 0%;
-      margin: 5px;
-      text-align: center;
-      color: #480ca8; }
-  .index .productos .border__text {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding: 0%; }
-    .index .productos .border__text .main__text {
-      font-family: Roboto-light;
-      color: #5a189a;
-      padding: 30px; }
-  .index .productos .main__product {
-    height: 300px;
-    width: 300px;
+
+main .img__redondo {
+  border-radius: 50%;
+  border: 5px solid #393d3f;
+  margin: 10px; }
+
+main .bloque__juegos .video__cat {
+  height: 300px;
+  width: 350px;
+  margin: 20px;
+  border: 10px solid #393d3f; }
+
+main .border__subtitle {
+  max-height: 100%;
+  max-width: 100%;
+  padding: 5px;
+  margin: 10px;
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
+  justify-content: center; }
+  main .border__subtitle .main__subtitle {
+    font-family: Roboto-bold;
     padding: 0%;
-    margin-left: 10px;
-    margin-right: 10px;
-    border: 2px solid black;
-    box-shadow: 10px 10px 5px #a19a9a;
-    justify-content: space-between; }
-  .index .preguntas__frecuentes .title {
-    font-family: puppy bellies;
-    padding: 10px;
-    height: 80px;
-    width: 300px;
-    justify-content: center;
+    margin: 5px;
     text-align: center;
-    margin-bottom: 30px;
-    font-size: 40px;
-    text-transform: uppercase;
-    background-image: linear-gradient(to left, #f1c0e8, #cfbaf0);
-    color: #3e1f47; }
-  .index .preguntas__frecuentes .border__subtitle {
-    max-height: 100%;
-    max-width: 100%;
-    padding: 5px;
+    color: #480ca8; }
+
+main .main__product {
+  height: 300px;
+  width: 300px;
+  padding: 0%;
+  margin-left: 10px;
+  margin-right: 10px;
+  border: 2px solid black;
+  box-shadow: 10px 10px 5px #a19a9a;
+  justify-content: space-between; }
+
+main .contacto__bloque {
+  border: 2px solid #140303;
+  box-shadow: 15px 15px 10px #4e4545;
+  max-height: 100%;
+  padding: 10px;
+  margin-bottom: 40px;
+  background-image: linear-gradient(to left, #fff0f3, #ffccd5); }
+  main .contacto__bloque .img__galaresponde {
+    border: 5px solid #393d3f;
+    height: 300px;
+    width: 300px;
     margin: 10px;
-    border-bottom: 2px solid black;
-    border-top: 2px solid black;
     justify-content: center; }
-    .index .preguntas__frecuentes .border__subtitle .main__subtitle {
-      font-family: Roboto-bold;
-      padding: 0%;
-      margin: 5px;
-      text-align: center;
-      color: #480ca8; }
-  .index .preguntas__frecuentes .main__text {
+  main .contacto__bloque .main__form {
+    display: flex;
+    flex-direction: column;
     font-family: Roboto-light;
-    color: #5a189a;
-    padding: 30px; }
-  .index .contacto .title {
-    font-family: puppy bellies;
-    padding: 10px;
-    height: 80px;
-    width: 300px;
-    justify-content: center;
-    text-align: center;
-    margin-bottom: 30px;
-    font-size: 40px;
-    text-transform: uppercase;
-    background-image: linear-gradient(to left, #f1c0e8, #cfbaf0);
-    color: #3e1f47; }
-  .index .contacto .contacto__bloque {
-    border: 2px solid #140303;
-    box-shadow: 15px 15px 10px #4e4545;
-    max-height: 100%;
-    padding: 10px;
-    margin-bottom: 40px;
-    background-image: linear-gradient(to left, #fff0f3, #ffccd5); }
-    .index .contacto .contacto__bloque .border__subtitle {
-      max-height: 100%;
-      max-width: 100%;
-      padding: 5px;
-      margin: 10px;
-      border-bottom: 2px solid black;
-      border-top: 2px solid black;
-      justify-content: center; }
-      .index .contacto .contacto__bloque .border__subtitle .main__subtitle {
-        font-family: Roboto-bold;
-        padding: 0%;
-        margin: 5px;
-        text-align: center;
-        color: #480ca8; }
-    .index .contacto .contacto__bloque .img__galaresponde {
-      border: 5px solid #393d3f;
-      height: 300px;
-      width: 300px;
-      margin: 10px;
-      justify-content: center; }
-    .index .contacto .contacto__bloque .main__form {
-      display: flex;
-      flex-direction: column;
-      font-family: Roboto-light;
-      font-size: 25px;
-      align-items: flex-start;
-      margin-left: 20px; }
-      .index .contacto .contacto__bloque .main__form .select__product {
-        width: 250px; }
-    .index .contacto .contacto__bloque .input__contacto {
-      margin: 10px; }
+    font-size: 25px;
+    align-items: flex-start;
+    margin-left: 20px; }
+    main .contacto__bloque .main__form .select__product {
+      width: 250px; }
+  main .contacto__bloque .input__contacto {
+    margin: 10px; }
 
 footer {
   border: 3px solid #343a40;
