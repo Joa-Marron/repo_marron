@@ -1,6 +1,7 @@
 
 header {
-    background-image: linear-gradient(to left, #a997df, #dccfec);
+    background-image:linear-gradient(to left, #e0aaff, #c77dff);
+    
 }
 .border__header {
     border-bottom: 3px solid black;
@@ -19,7 +20,7 @@ li a {
     border-bottom: 1px solid black;
     border-top: 1px solid black;
     &:hover {
-    background-color: #fadde1;
+    background-color: #ff69eb;
 }
 }
 }
