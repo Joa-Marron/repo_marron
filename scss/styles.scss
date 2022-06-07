@@ -5,6 +5,7 @@
 @import "footer";
 @import "tipografia";
 @import "variables";
+@import "breakpoints";
 
 
 /*------------------------------General---------------------------------*/
@@ -69,7 +70,7 @@ body {
 
 /*................MEDIAS QUERIES.........................*/
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width:$lg) {
     #imagen__index {
         display: flex;
         flex-direction: row;
