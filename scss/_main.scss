@@ -2,116 +2,175 @@
 @import "footer";
 @import "tipografia";
 @import "variables";
+@import "mixins";
 
 main {
-    .title {
-        font-family: puppy bellies;
-        padding: 10px;
+    .container__title {
+        border: 3px solid black;
+        background-image: url(../media/backgroundTitle.jpg);
+        background-size: 40%;
+        background-size: cover;
+        padding: 5px;
+        margin: 15px;
+        max-height: 100%;
+        max-width: 40%;
         justify-content: center;
-        text-align: center;
-        margin-bottom: 30px;
-        text-transform: uppercase;
-        background-image: linear-gradient(to left, #f1c0e8, #cfbaf0);
-        color: $titulo;
+
+        .title {
+            font-family: Panipuri;
+            padding: 10px;
+            justify-content: center;
+            text-align: center;
+            color: $color__titulo;
+        }
     }
 
     .container__index {
-        border-radius: 50%;
-        border: 3px solid rgb(24, 21, 21);
-        box-shadow: 10px 10px 5px rgb(24, 21, 21);
-        max-height: 100%;
-        max-width: 50%;
-        justify-content: left;
-        padding: 10px;
-        margin-bottom: 50px;
-        background-image: linear-gradient(to left, #f72585, #f1c0e8);
+        @include contenedor
+    }
+
+    .container__interes {
+        @include contenedor;
+        max-width: 100%;
+        margin: 10px;
+    }
+
+    .container__productos {
+        @include contenedor;
+        width: 60%;
+        justify-content: center;
+        margin: 10px;
+    }
+
+    .container__pf {
+        @include contenedor;
+        width: 60%;
+        justify-content: center;
+        margin: 10px;
+
     }
 
     .main__text {
-        font-family: Roboto-light;
-        color: $texto;
-        padding: 30px;
-        margin: 15px;
+        @include texto;
     }
 
+    .main__text__contacto {
+        @include texto;
+        color: rgb(35, 5, 36);
+        padding: 5px;
+        background-color: #c7388b;
+        border: 2px solid black;
+    }
 
     .img__redondo {
         border-radius: 50%;
+        border: 5px solid #030303;
+        margin: 10px;
+    }
+
+
+    .video__cat {
+        margin: 20px;
         border: 5px solid #393d3f;
-        margin: 10px;
     }
 
-    .bloque__juegos {
-        .video__cat {
-            height: 300px;
-            width: 350px;
-            margin: 20px;
-            border: 10px solid #393d3f;
-        }
+
+    .main__subtitle__interes {
+        @include subtitulo;
     }
 
-    .border__subtitle {
-        max-height: 100%;
-        max-width: 100%;
-        padding: 5px;
-        margin: 10px;
-        border-bottom: 2px solid black;
-        border-top: 2px solid black;
-        justify-content: center;
+    .main__subtitle__productos {
+        @include subtitulo;
+        margin: 15px;
+        padding: 10px;
+        margin: 15px;
+        height: 100%;
+        width: 100%;
 
-        .main__subtitle {
-            font-family: Roboto-bold;
-            padding: 0%;
-            margin: 5px;
-            text-align: center;
-            color: $subtitulo;
-        }
     }
+
+    .main__subtitle__pf {
+        @include subtitulo;
+        height: 80px;
+        width: 500px;
+        padding-top: 10px;
+    }
+
 
     .main__product {
         height: 300px;
         width: 300px;
         padding: 0%;
-        margin-left: 10px;
-        margin-right: 10px;
+        margin: 10px;
         border: 2px solid black;
         box-shadow: 10px 10px 5px rgb(161, 154, 154);
-        justify-content: space-between;
+        justify-content: space-evenly;
     }
 
 
-    .contacto__bloque {
-        border: 2px solid rgb(20, 3, 3);
-        box-shadow: 15px 15px 10px rgb(78, 69, 69);
+    .bloque__contacto__presentacion {
+        font-family: Lovesalmon;
+        text-align: center;
+        color: $color__subtitulo;
+        padding: 20px;
+        border: 4px solid rgb(20, 3, 3);
         max-height: 100%;
-        padding: 10px;
+        width: 40%;
         margin-bottom: 40px;
-        background-image: linear-gradient(to left, #fff0f3, #ffccd5);
+        background-image: url(../media/backgroundGala.jpg);
+    }
 
 
-        .img__galaresponde {
-            border: 5px solid #393d3f;
-            height: 300px;
-            width: 300px;
-            margin: 10px;
-            justify-content: center;
-        }
+    .img__galaresponde {
+        border: 5px solid #393d3f;
+        height: 300px;
+        width: 300px;
+        margin: 10px;
+        justify-content: center;
+        box-shadow: 15px 15px 10px rgb(48, 41, 41);
+    }
 
-        .main__form {
-            display: flex;
-            flex-direction: column;
-            font-family: Roboto-light;
-            font-size: 25px;
-            align-items: flex-start;
-            margin-left: 20px;
+    .main__form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 20px;
+    }
 
-            .select__product {
-                width: 250px;
-            }
-        }
+    .main__text__seleccion {
+        @include texto;
+        color: rgb(35, 5, 36);
+        padding: 5px;
+        background-color: #d466d4;
+        border: 2px solid black;
+    }
 
-        .input__contacto {
-            margin: 10px;
-        }
+    .main__desplegable {
+        font-family: Gracelyne;
+        color: navajowhite;
+        background-color: #030303;
+    }
+
+    .contenedor__contacto {
+        border: 5px solid rgb(12, 4, 8);
+        max-height: 100%;
+        width: 50%;
+        justify-content: center;
+        background-image: url(../media/backgroundContacto.jpg);
+        background-size: cover;
+
+    }
+
+    .contacto__final{
+        font-family: Gracelyne;
+        color: $color__texto;
+    }
+    .select__product {
+        width: 250px;
+    }
+
+
+    .input__contacto {
+        margin: 10px;
     }
 }

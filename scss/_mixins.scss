@@ -1,0 +1,27 @@
+@mixin contenedor {
+    border: 10px solid rgb(172, 23, 97);
+        max-height: 100%;
+        max-width: 50%;
+        justify-content: left;
+        padding: 10px;
+        margin-bottom: 50px;
+}
+
+@mixin subtitulo {
+    font-family: Panipuri;
+        padding: 0%;
+        margin: 5px;
+        text-align: center;
+        color: $color__subtitulo;
+        padding-top: 10px;
+        border-bottom: 3px dashed rgb(185, 31, 134);
+        border-top: 3px dashed rgb(185, 31, 134);
+}
+
+@mixin texto {
+    font-family: Lovesalmon;
+        color: $color__texto;
+        padding: 30px;
+        margin: 10px;
+        background-color: #0a0101;
+}

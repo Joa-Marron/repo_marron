@@ -42,11 +42,11 @@ header {
 footer {
   border: 3px solid #343a40;
   max-height: 100%;
-  max-width: 100%;
+  max-width: 70%;
   justify-content: center;
-  background-image: linear-gradient(to left, #ced4da, #adb5bd); }
+  background-image: linear-gradient(to left, #ced4da, #da6fc8); }
   footer .subtitle__footer {
-    font-family: Roboto-medium;
+    font-family: Gracelyne;
     padding: 0%;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -74,125 +74,215 @@ footer {
     margin: 2px; }
 
 @font-face {
-  font-family: puppy bellies;
-  src: url(../fonts/PuppyBellies.ttf); }
+  font-family: Panipuri;
+  src: url(../fonts/Panipuri.otf); }
 
 @font-face {
-  font-family: puppy love;
-  src: url(../fonts/PuppyLove.otf); }
+  font-family: Lovesalmon;
+  src: url(../fonts/ILoveSalmon.ttf); }
 
 @font-face {
-  font-family: alleyGarden;
-  src: url(../fonts/aAlleyGarden.otf); }
+  font-family: Gracelyne;
+  src: url(../fonts/Gracelyne.otf); }
 
-@font-face {
-  font-family: Roboto-light;
-  src: url(../fonts/Roboto-Light.ttf); }
-
-@font-face {
-  font-family: Roboto-medium;
-  src: url(../fonts/Roboto-Medium.ttf); }
-
-@font-face {
-  font-family: Roboto-bold;
-  src: url(../fonts/Roboto-BoldCondensedItalic.ttf); }
-
-main .title {
-  font-family: puppy bellies;
-  padding: 10px;
-  justify-content: center;
-  text-align: center;
-  margin-bottom: 30px;
-  text-transform: uppercase;
-  background-image: linear-gradient(to left, #f1c0e8, #cfbaf0);
-  color: #3e1f47; }
+main .container__title {
+  border: 3px solid black;
+  background-image: url(../media/backgroundTitle.jpg);
+  background-size: 40%;
+  background-size: cover;
+  padding: 5px;
+  margin: 15px;
+  max-height: 100%;
+  max-width: 40%;
+  justify-content: center; }
+  main .container__title .title {
+    font-family: Panipuri;
+    padding: 10px;
+    justify-content: center;
+    text-align: center;
+    color: #3e1f47; }
 
 main .container__index {
-  border-radius: 50%;
-  border: 3px solid #181515;
-  box-shadow: 10px 10px 5px #181515;
+  border: 10px solid #ac1761;
+  max-height: 100%;
+  max-width: 50%;
+  justify-content: left;
+  padding: 10px;
+  margin-bottom: 50px; }
+
+main .container__interes {
+  border: 10px solid #ac1761;
   max-height: 100%;
   max-width: 50%;
   justify-content: left;
   padding: 10px;
   margin-bottom: 50px;
-  background-image: linear-gradient(to left, #f72585, #f1c0e8); }
+  max-width: 100%;
+  margin: 10px; }
+
+main .container__productos {
+  border: 10px solid #ac1761;
+  max-height: 100%;
+  max-width: 50%;
+  justify-content: left;
+  padding: 10px;
+  margin-bottom: 50px;
+  width: 60%;
+  justify-content: center;
+  margin: 10px; }
+
+main .container__pf {
+  border: 10px solid #ac1761;
+  max-height: 100%;
+  max-width: 50%;
+  justify-content: left;
+  padding: 10px;
+  margin-bottom: 50px;
+  width: 60%;
+  justify-content: center;
+  margin: 10px; }
 
 main .main__text {
-  font-family: Roboto-light;
+  font-family: Lovesalmon;
   color: #5a189a;
   padding: 30px;
-  margin: 15px; }
+  margin: 10px;
+  background-color: #0a0101; }
+
+main .main__text__contacto {
+  font-family: Lovesalmon;
+  color: #5a189a;
+  padding: 30px;
+  margin: 10px;
+  background-color: #0a0101;
+  color: #230524;
+  padding: 5px;
+  background-color: #c7388b;
+  border: 2px solid black; }
 
 main .img__redondo {
   border-radius: 50%;
-  border: 5px solid #393d3f;
+  border: 5px solid #030303;
   margin: 10px; }
 
-main .bloque__juegos .video__cat {
-  height: 300px;
-  width: 350px;
+main .video__cat {
   margin: 20px;
-  border: 10px solid #393d3f; }
+  border: 5px solid #393d3f; }
 
-main .border__subtitle {
-  max-height: 100%;
-  max-width: 100%;
-  padding: 5px;
-  margin: 10px;
-  border-bottom: 2px solid black;
-  border-top: 2px solid black;
-  justify-content: center; }
-  main .border__subtitle .main__subtitle {
-    font-family: Roboto-bold;
-    padding: 0%;
-    margin: 5px;
-    text-align: center;
-    color: #480ca8; }
+main .main__subtitle__interes {
+  font-family: Panipuri;
+  padding: 0%;
+  margin: 5px;
+  text-align: center;
+  color: #480ca8;
+  padding-top: 10px;
+  border-bottom: 3px dashed #b91f86;
+  border-top: 3px dashed #b91f86; }
+
+main .main__subtitle__productos {
+  font-family: Panipuri;
+  padding: 0%;
+  margin: 5px;
+  text-align: center;
+  color: #480ca8;
+  padding-top: 10px;
+  border-bottom: 3px dashed #b91f86;
+  border-top: 3px dashed #b91f86;
+  margin: 15px;
+  padding: 10px;
+  margin: 15px;
+  height: 100%;
+  width: 100%; }
+
+main .main__subtitle__pf {
+  font-family: Panipuri;
+  padding: 0%;
+  margin: 5px;
+  text-align: center;
+  color: #480ca8;
+  padding-top: 10px;
+  border-bottom: 3px dashed #b91f86;
+  border-top: 3px dashed #b91f86;
+  height: 80px;
+  width: 500px;
+  padding-top: 10px; }
 
 main .main__product {
   height: 300px;
   width: 300px;
   padding: 0%;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin: 10px;
   border: 2px solid black;
   box-shadow: 10px 10px 5px #a19a9a;
-  justify-content: space-between; }
+  justify-content: space-evenly; }
 
-main .contacto__bloque {
-  border: 2px solid #140303;
-  box-shadow: 15px 15px 10px #4e4545;
+main .bloque__contacto__presentacion {
+  font-family: Lovesalmon;
+  text-align: center;
+  color: #480ca8;
+  padding: 20px;
+  border: 4px solid #140303;
   max-height: 100%;
-  padding: 10px;
+  width: 40%;
   margin-bottom: 40px;
-  background-image: linear-gradient(to left, #fff0f3, #ffccd5); }
-  main .contacto__bloque .img__galaresponde {
-    border: 5px solid #393d3f;
-    height: 300px;
-    width: 300px;
-    margin: 10px;
-    justify-content: center; }
-  main .contacto__bloque .main__form {
-    display: flex;
-    flex-direction: column;
-    font-family: Roboto-light;
-    font-size: 25px;
-    align-items: flex-start;
-    margin-left: 20px; }
-    main .contacto__bloque .main__form .select__product {
-      width: 250px; }
-  main .contacto__bloque .input__contacto {
-    margin: 10px; }
+  background-image: url(../media/backgroundGala.jpg); }
+
+main .img__galaresponde {
+  border: 5px solid #393d3f;
+  height: 300px;
+  width: 300px;
+  margin: 10px;
+  justify-content: center;
+  box-shadow: 15px 15px 10px #302929; }
+
+main .main__form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 20px; }
+
+main .main__text__seleccion {
+  font-family: Lovesalmon;
+  color: #5a189a;
+  padding: 30px;
+  margin: 10px;
+  background-color: #0a0101;
+  color: #230524;
+  padding: 5px;
+  background-color: #d466d4;
+  border: 2px solid black; }
+
+main .main__desplegable {
+  font-family: Gracelyne;
+  color: navajowhite;
+  background-color: #030303; }
+
+main .contenedor__contacto {
+  border: 5px solid #0c0408;
+  max-height: 100%;
+  width: 50%;
+  justify-content: center;
+  background-image: url(../media/backgroundContacto.jpg);
+  background-size: cover; }
+
+main .contacto__final {
+  font-family: Gracelyne;
+  color: #5a189a; }
+
+main .select__product {
+  width: 250px; }
+
+main .input__contacto {
+  margin: 10px; }
 
 footer {
   border: 3px solid #343a40;
   max-height: 100%;
-  max-width: 100%;
+  max-width: 70%;
   justify-content: center;
-  background-image: linear-gradient(to left, #ced4da, #adb5bd); }
+  background-image: linear-gradient(to left, #ced4da, #da6fc8); }
   footer .subtitle__footer {
-    font-family: Roboto-medium;
+    font-family: Gracelyne;
     padding: 0%;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -220,28 +310,16 @@ footer {
     margin: 2px; }
 
 @font-face {
-  font-family: puppy bellies;
-  src: url(../fonts/PuppyBellies.ttf); }
+  font-family: Panipuri;
+  src: url(../fonts/Panipuri.otf); }
 
 @font-face {
-  font-family: puppy love;
-  src: url(../fonts/PuppyLove.otf); }
+  font-family: Lovesalmon;
+  src: url(../fonts/ILoveSalmon.ttf); }
 
 @font-face {
-  font-family: alleyGarden;
-  src: url(../fonts/aAlleyGarden.otf); }
-
-@font-face {
-  font-family: Roboto-light;
-  src: url(../fonts/Roboto-Light.ttf); }
-
-@font-face {
-  font-family: Roboto-medium;
-  src: url(../fonts/Roboto-Medium.ttf); }
-
-@font-face {
-  font-family: Roboto-bold;
-  src: url(../fonts/Roboto-BoldCondensedItalic.ttf); }
+  font-family: Gracelyne;
+  src: url(../fonts/Gracelyne.otf); }
 
 /*------------------------------General---------------------------------*/
 * {

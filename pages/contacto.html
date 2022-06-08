@@ -55,48 +55,54 @@
     <main>
 
       <div class="flex">
+        <div class="container__title">
         <h1 class="title">Happy Paws</h1>
       </div>
-
-      <div class="container contacto__bloque">
+    </div>
+      <div class="container bloque__contacto__presentacion">
 
         <div class="flex">
-          <div class="border__subtitle">
-            <p class="h3 main__subtitle">Dejanos tu consulta. Te responderemos a la brevedad.</p>
+          <div class="border__subtitle flex">
+            <p class="h3 main__subtitle">Dejanos tu consulta y te responderemos a la brevedad.</p>
           </div>
         </div>
-
+      
         <div class="flex wrap">
         <div class="flex">
           <img class="img__galaresponde img-thumbnail" src="../media/Galaresponde.jpeg" alt="Perrito en compu"
             height="200px" width="200px">
+          </div>
         </div>
+      </div>
+      <div class="flex">
+<div class="contenedor__contacto">
+  
         <form class="main__form" action="" method="" enctype="">
-          <label for="nombre" class="main__text">Escribe tu nombre</label>
+          <label for="nombre" class="main__text__contacto">Escribe tu nombre</label>
           <input type="text" id="nombre" name="nombre" value="" placeholder="nombre" />
-          <label for="apellido" class="main__text">Escribe tu apellido</label>
+          <label for="apellido" class="main__text__contacto">Escribe tu apellido</label>
           <input type="text" id="apellido" name="apellido" placeholder="apellido" />
-          <label for="tel" class="main__text">Escribe tu número de teléfono</label>
+          <label for="tel" class="main__text__contacto">Escribe tu número de teléfono</label>
           <input type="number" id="tel" placeholder="teléfono" />
-          <label for="email" class="main__text">Escribe tu email</label>
+          <label for="email" class="main__text__contacto">Escribe tu email</label>
           <input type="email" id="mail" placeholder="mail@mail.com" />
 
-          <label class="main__form" for="productos" class="main__text">Selecciona el producto de tu interés</label>
+          <label class="main__form main__text__seleccion" for="productos" >Selecciona el producto de tu interés</label>
           <select name="Productos" id="" class="form-select select__product" aria-label="Default select">
-            <option value="cama" class="main__text">Camitas</option>
-            <option value="mordillo" class="main__text">Mordillos</option>
-            <option value="rascador" class="main__text">Rascadores</option>
+            <option value="cama" class="main__desplegable h5">Camitas</option>
+            <option value="mordillo" class="main__desplegable h5">Mordillos</option>
+            <option value="rascador" class="main__desplegable h5">Rascadores</option>
           </select>
 
-          <p class="main__form">
+          <p class="main__form contacto__final h4">
             ¿Sabías que podés recibir información semanal sobre nuestros productos?
           </p>
-          <p class="main__form">Solo debés subscribirte a nuestro newsletter</p>
-          <label class="main__form" for="suscribir">Acepto suscribirme al newsletter</label>
+          <p class="main__form contacto__final h4">Solo debés subscribirte a nuestro newsletter</p>
+          <label class="main__form contacto__final h4" for="suscribir">Acepto suscribirme al newsletter</label>
          
           <input type="checkbox" name="Suscribir" id="" value="Si" />
         
-          <label class="main__form" for="opinion">Escribe aquí tu consulta</label>
+          <label class="main__form contacto__final h4" for="opinion">Escribe aquí tu consulta</label>
           <div class="form-floating">
             <textarea class="form-control" placeholder="Escribe aquí tu comentario" id="floatingTextarea" style="height: 100px"></textarea>
             <label for="floatingTextarea"></label>
@@ -109,6 +115,7 @@
         </form>
       </div>
       </div>
+    </div>
     </main>
 
 
