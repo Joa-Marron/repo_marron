@@ -6,27 +6,39 @@
 
 main {
     .container__title {
+        display: flex;
+        justify-content: center;
         border: 3px solid black;
         background-image: url(../media/backgroundTitle.jpg);
         background-size: 40%;
         background-size: cover;
-        padding: 5px;
-        margin: 15px;
-        max-height: 100%;
-        max-width: 40%;
-        justify-content: center;
+        margin: 0% auto;
+        width: 300px;
+        margin-bottom: 15px;
+
 
         .title {
             font-family: Panipuri;
             padding: 10px;
-            justify-content: center;
             text-align: center;
             color: $color__titulo;
         }
     }
 
-    .container__index {
-        @include contenedor
+    .index__bloque1 {
+        @include column;
+
+        .container__index {
+            @include contenedor
+        }
+    }
+
+    .index__bloque2 {
+        @include column;
+        
+        .container__index {
+            @include contenedor
+        }
     }
 
     .container__interes {
@@ -161,10 +173,11 @@ main {
 
     }
 
-    .contacto__final{
+    .contacto__final {
         font-family: Gracelyne;
         color: $color__texto;
     }
+
     .select__product {
         width: 250px;
     }

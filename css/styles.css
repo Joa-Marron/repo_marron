@@ -39,39 +39,55 @@ header {
       .border__header .nav li a:hover {
         background-color: #ff69eb; }
 
+@font-face {
+  font-family: Panipuri;
+  src: url(../fonts/Panipuri.otf); }
+
+@font-face {
+  font-family: Lovesalmon;
+  src: url(../fonts/ILoveSalmon.ttf); }
+
+@font-face {
+  font-family: Gracelyne;
+  src: url(../fonts/Gracelyne.otf); }
+
 footer {
+  margin: 0% auto;
   border: 3px solid #343a40;
-  max-height: 100%;
-  max-width: 70%;
-  justify-content: center;
   background-image: linear-gradient(to left, #ced4da, #da6fc8); }
-  footer .subtitle__footer {
-    font-family: Gracelyne;
-    padding: 0%;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    text-align: center;
-    justify-items: center; }
-  footer .iframe__footer {
+  footer .footer__bloque1 {
+    display: flex;
+    flex-direction: column;
     align-items: center; }
-  footer .link__ig {
-    height: 150px;
-    width: 150px;
-    padding: 0%;
-    justify-content: space-evenly; }
-  footer .link__wp {
-    height: 150px;
-    width: 150px;
-    padding: 0%;
-    justify-content: space-evenly; }
-  footer .link__footer {
+    footer .footer__bloque1 .subtitle__footer {
+      font-family: Gracelyne;
+      padding: 0%;
+      margin-top: 10px;
+      margin-bottom: 10px; }
+    footer .footer__bloque1 .footer__map {
+      margin: 0% auto; }
+  footer .footer__bloque2 .link__redes {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    footer .footer__bloque2 .link__redes .link__ig {
+      height: 150px;
+      width: 150px;
+      padding: 0%; }
+    footer .footer__bloque2 .link__redes .link__wp {
+      height: 150px;
+      width: 150px;
+      padding: 0%; }
+  footer .footer__bloque3 .link__footer {
+    display: flex;
     justify-content: space-evenly;
+    align-items: center;
     background-color: #03071e; }
-  footer .link {
-    text-decoration: none;
-    color: #ffcfd2;
-    background-color: #03071e;
-    margin: 2px; }
+    footer .footer__bloque3 .link__footer .link {
+      text-decoration: none;
+      color: #d834a1;
+      background-color: #03071e;
+      margin: 4px; }
 
 @font-face {
   font-family: Panipuri;
@@ -86,29 +102,44 @@ footer {
   src: url(../fonts/Gracelyne.otf); }
 
 main .container__title {
+  display: flex;
+  justify-content: center;
   border: 3px solid black;
   background-image: url(../media/backgroundTitle.jpg);
   background-size: 40%;
   background-size: cover;
-  padding: 5px;
-  margin: 15px;
-  max-height: 100%;
-  max-width: 40%;
-  justify-content: center; }
+  margin: 0% auto;
+  width: 300px;
+  margin-bottom: 15px; }
   main .container__title .title {
     font-family: Panipuri;
     padding: 10px;
-    justify-content: center;
     text-align: center;
     color: #3e1f47; }
 
-main .container__index {
-  border: 10px solid #ac1761;
-  max-height: 100%;
-  max-width: 50%;
-  justify-content: left;
-  padding: 10px;
-  margin-bottom: 50px; }
+main .index__bloque1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  main .index__bloque1 .container__index {
+    border: 10px solid #ac1761;
+    max-height: 100%;
+    max-width: 50%;
+    justify-content: left;
+    padding: 10px;
+    margin-bottom: 50px; }
+
+main .index__bloque2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  main .index__bloque2 .container__index {
+    border: 10px solid #ac1761;
+    max-height: 100%;
+    max-width: 50%;
+    justify-content: left;
+    padding: 10px;
+    margin-bottom: 50px; }
 
 main .container__interes {
   border: 10px solid #ac1761;
@@ -146,15 +177,13 @@ main .main__text {
   font-family: Lovesalmon;
   color: #5a189a;
   padding: 30px;
-  margin: 10px;
-  background-color: #0a0101; }
+  background-color: #aa6889; }
 
 main .main__text__contacto {
   font-family: Lovesalmon;
   color: #5a189a;
   padding: 30px;
-  margin: 10px;
-  background-color: #0a0101;
+  background-color: #aa6889;
   color: #230524;
   padding: 5px;
   background-color: #c7388b;
@@ -245,8 +274,7 @@ main .main__text__seleccion {
   font-family: Lovesalmon;
   color: #5a189a;
   padding: 30px;
-  margin: 10px;
-  background-color: #0a0101;
+  background-color: #aa6889;
   color: #230524;
   padding: 5px;
   background-color: #d466d4;
@@ -281,39 +309,55 @@ main .input__contacto {
   max-height: 100%;
   padding: 10px; }
 
+@font-face {
+  font-family: Panipuri;
+  src: url(../fonts/Panipuri.otf); }
+
+@font-face {
+  font-family: Lovesalmon;
+  src: url(../fonts/ILoveSalmon.ttf); }
+
+@font-face {
+  font-family: Gracelyne;
+  src: url(../fonts/Gracelyne.otf); }
+
 footer {
+  margin: 0% auto;
   border: 3px solid #343a40;
-  max-height: 100%;
-  max-width: 70%;
-  justify-content: center;
   background-image: linear-gradient(to left, #ced4da, #da6fc8); }
-  footer .subtitle__footer {
-    font-family: Gracelyne;
-    padding: 0%;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    text-align: center;
-    justify-items: center; }
-  footer .iframe__footer {
+  footer .footer__bloque1 {
+    display: flex;
+    flex-direction: column;
     align-items: center; }
-  footer .link__ig {
-    height: 150px;
-    width: 150px;
-    padding: 0%;
-    justify-content: space-evenly; }
-  footer .link__wp {
-    height: 150px;
-    width: 150px;
-    padding: 0%;
-    justify-content: space-evenly; }
-  footer .link__footer {
+    footer .footer__bloque1 .subtitle__footer {
+      font-family: Gracelyne;
+      padding: 0%;
+      margin-top: 10px;
+      margin-bottom: 10px; }
+    footer .footer__bloque1 .footer__map {
+      margin: 0% auto; }
+  footer .footer__bloque2 .link__redes {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    footer .footer__bloque2 .link__redes .link__ig {
+      height: 150px;
+      width: 150px;
+      padding: 0%; }
+    footer .footer__bloque2 .link__redes .link__wp {
+      height: 150px;
+      width: 150px;
+      padding: 0%; }
+  footer .footer__bloque3 .link__footer {
+    display: flex;
     justify-content: space-evenly;
+    align-items: center;
     background-color: #03071e; }
-  footer .link {
-    text-decoration: none;
-    color: #ffcfd2;
-    background-color: #03071e;
-    margin: 2px; }
+    footer .footer__bloque3 .link__footer .link {
+      text-decoration: none;
+      color: #d834a1;
+      background-color: #03071e;
+      margin: 4px; }
 
 @font-face {
   font-family: Panipuri;
@@ -356,13 +400,15 @@ image {
   grid-template-columns: 1fr;
   grid-template-rows: repeat(4 1fr);
   column-gap: 15px;
-  row-gap: 15px; }
+  row-gap: 15px;
+  height: 100vh; }
 
 header {
   grid-area: header; }
 
 main {
-  grid-area: main; }
+  grid-area: main;
+  flex-wrap: wrap; }
 
 footer {
   grid-area: footer; }

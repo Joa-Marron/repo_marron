@@ -22,6 +22,18 @@
     font-family: Lovesalmon;
         color: $color__texto;
         padding: 30px;
-        margin: 10px;
-        background-color: #0a0101;
+        background-color: #aa6889;
+}
+
+@mixin flex ($justify, $align){
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
 }
