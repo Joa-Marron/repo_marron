@@ -1,28 +1,32 @@
-
+@import "tipografia";
+@import "variables";
+@import "mixins";
+@import "breakpoints";
 
 header {
-    background-image:linear-gradient(to left, #e0aaff, #c77dff);
-}   
 
-.border__header {
-    border-bottom: 3px solid black;
+    background-image: linear-gradient(to left, #e0aaff, #c77dff);
 
-.logo {
-    height: 100px;
-    width: 150px;
-    padding: 0%;
-}
-.nav {
-    display: inline-block;
-li a {
-    text-transform: uppercase;
-    margin-left: 5px;
-    margin-right: 5px;
-    border-bottom: 1px solid black;
-    border-top: 1px solid black;
-    &:hover {
-    background-color: #ff69eb;
-}
-}
-}
+    .logo {
+        height: 100px;
+        width: 150px;
+        padding: 0%;
+    }
+
+    .nav {
+
+        display: inline-block;
+
+        li a {
+            text-transform: uppercase;
+            margin-left: 5px;
+            margin-right: 5px;
+            border-bottom: 1px solid black;
+            border-top: 1px solid black;
+
+            &:hover {
+                background-color: #ff69eb;
+            }
+        }
+    }
 }

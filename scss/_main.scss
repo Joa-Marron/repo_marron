@@ -1,8 +1,9 @@
-@import "header";
-@import "footer";
 @import "tipografia";
 @import "variables";
 @import "mixins";
+@import "breakpoints";
+
+
 
 main {
     .container__title {
@@ -35,161 +36,147 @@ main {
 
     .index__bloque2 {
         @include column;
-        
+
         .container__index {
             @include contenedor
         }
     }
 
-    .container__interes {
-        @include contenedor;
-        max-width: 100%;
-        margin: 10px;
+    .interes__bloque {
+        @include column;
+
+        .main__subtitle__interes {
+            @include subtitulo;
+        }
+
+        .img__redondo {
+            @include flex (center, center);
+            border-radius: 50%;
+            border: 5px solid #030303;
+            margin: 0% auto;
+        }
+
+        .container__interes {
+            @include contenedor;
+            max-width: 100%;
+            margin: 10px;
+        }
     }
 
-    .container__productos {
-        @include contenedor;
-        width: 60%;
-        justify-content: center;
-        margin: 10px;
+    .productos__bloque {
+        @include column;
+
+        .main__subtitle__productos {
+            @include subtitulo;
+            margin: 15px;
+            padding: 10px;
+            margin: 15px;
+            height: 100%;
+            width: 100%;
+        }
+
+        .container__productos {
+            @include contenedor;
+            width: 60%;
+            margin: 10px;
+
+            .main__text {
+                @include texto;
+            }
+        }
+
+        .main__product {
+            height: 300px;
+            width: 300px;
+            margin: 10px;
+            border: 2px solid black;
+            box-shadow: 10px 10px 5px rgb(161, 154, 154);
+        }
     }
 
-    .container__pf {
-        @include contenedor;
-        width: 60%;
-        justify-content: center;
-        margin: 10px;
+    .pf__bloque {
+        @include column;
 
+        .main__subtitle__pf {
+            @include subtitulo;
+            height: 80px;
+            width: 500px;
+            padding-top: 10px;
+        }
+
+        .container__pf {
+            @include contenedor;
+            width: 60%;
+            justify-content: center;
+            margin: 10px;
+
+            .main__text {
+                @include texto;
+            }
+        }
     }
 
-    .main__text {
-        @include texto;
-    }
+    .contacto__bloque {
+        @include column;
 
-    .main__text__contacto {
-        @include texto;
-        color: rgb(35, 5, 36);
-        padding: 5px;
-        background-color: #c7388b;
-        border: 2px solid black;
-    }
+        .contacto__bloque__presentacion {
+            @include column;
+            font-family: Lovesalmon;
+            color: $color__subtitulo;
+            padding: 20px;
+            border: 4px solid rgb(20, 3, 3);
+            background-image: url(../media/backgroundGala.jpg);
+            width: 30%;
+            height: 40%;
+            margin: 20px;
 
-    .img__redondo {
-        border-radius: 50%;
-        border: 5px solid #030303;
-        margin: 10px;
-    }
+            .main__subtitle {
+                @include subtitulo;
+            }
+        }
 
+        .contenedor__contacto {
+            @include column;
+            border: 5px solid rgb(12, 4, 8);
+            background-image: url(../media/backgroundContacto.jpg);
+            background-size: cover;
+            margin: 0% auto;
 
-    .video__cat {
-        margin: 20px;
-        border: 5px solid #393d3f;
-    }
+            .main__form {
+                margin-left: 20px;
+            }
 
+            .main__text__contacto {
+                @include texto;
+                color: rgb(35, 5, 36);
+                padding: 5px;
+                background-color: #c7388b;
+                border: 2px solid black;
+            }
 
-    .main__subtitle__interes {
-        @include subtitulo;
-    }
+            .select__product {
+                width: 250px;
+            }
 
-    .main__subtitle__productos {
-        @include subtitulo;
-        margin: 15px;
-        padding: 10px;
-        margin: 15px;
-        height: 100%;
-        width: 100%;
+            .main__desplegable {
+                font-family: Gracelyne;
+                color: navajowhite;
+                background-color: #030303;
+            }
 
-    }
+            .contacto__final {
+                font-family: Gracelyne;
+                color: $color__texto;
+            }
 
-    .main__subtitle__pf {
-        @include subtitulo;
-        height: 80px;
-        width: 500px;
-        padding-top: 10px;
-    }
+            .input__contacto {
+                margin: 15px;
+                background-color: #83baf8;
+                border-radius: 20%;
+                font-family: Gracelyne;
+                padding: 10px;
+            }
 
-
-    .main__product {
-        height: 300px;
-        width: 300px;
-        padding: 0%;
-        margin: 10px;
-        border: 2px solid black;
-        box-shadow: 10px 10px 5px rgb(161, 154, 154);
-        justify-content: space-evenly;
-    }
-
-
-    .bloque__contacto__presentacion {
-        font-family: Lovesalmon;
-        text-align: center;
-        color: $color__subtitulo;
-        padding: 20px;
-        border: 4px solid rgb(20, 3, 3);
-        max-height: 100%;
-        width: 40%;
-        margin-bottom: 40px;
-        background-image: url(../media/backgroundGala.jpg);
-    }
-
-
-    .img__galaresponde {
-        border: 5px solid #393d3f;
-        height: 300px;
-        width: 300px;
-        margin: 10px;
-        justify-content: center;
-        box-shadow: 15px 15px 10px rgb(48, 41, 41);
-    }
-
-    .main__form {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        margin-left: 20px;
-    }
-
-    .main__text__seleccion {
-        @include texto;
-        color: rgb(35, 5, 36);
-        padding: 5px;
-        background-color: #d466d4;
-        border: 2px solid black;
-    }
-
-    .main__desplegable {
-        font-family: Gracelyne;
-        color: navajowhite;
-        background-color: #030303;
-    }
-
-    .contenedor__contacto {
-        border: 5px solid rgb(12, 4, 8);
-        max-height: 100%;
-        width: 50%;
-        justify-content: center;
-        background-image: url(../media/backgroundContacto.jpg);
-        background-size: cover;
-
-    }
-
-    .contacto__final {
-        font-family: Gracelyne;
-        color: $color__texto;
-    }
-
-    .select__product {
-        width: 250px;
-    }
-
-
-    .input__contacto {
-        margin: 15px;
-        background-color: #83baf8;
-        border-radius: 20%;
-        font-family: Gracelyne;
-        max-width: 100%;
-        max-height: 100%;
-        padding: 10px;
+        }
     }
 }
