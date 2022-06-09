@@ -29,16 +29,36 @@ main {
     .index__bloque1 {
         @include column;
 
-        .container__index {
-            @include contenedor
+        .img__redondo {
+            @include flex (center, center);
+            border-radius: 50%;
+            border: 5px solid #030303;
+            margin: 0% auto;
         }
+
+        .container__index {
+            @include contenedor;
+
+            .main__text {
+                @include texto;
+            }
+        }
+
     }
 
     .index__bloque2 {
         @include column;
 
         .container__index {
-            @include contenedor
+            @include contenedor;
+
+            .main__text {
+                @include texto;
+            }
+        }
+
+        .video__cat {
+            border: 3px solid rgb(19, 0, 18)
         }
     }
 
@@ -60,6 +80,9 @@ main {
             @include contenedor;
             max-width: 100%;
             margin: 10px;
+            .main__text {
+                @include texto;
+            }
         }
     }
 
@@ -126,8 +149,8 @@ main {
             padding: 20px;
             border: 4px solid rgb(20, 3, 3);
             background-image: url(../media/backgroundGala.jpg);
-            width: 30%;
-            height: 40%;
+            width: 500px;
+            height: 400px;
             margin: 20px;
 
             .main__subtitle {
@@ -141,17 +164,25 @@ main {
             background-image: url(../media/backgroundContacto.jpg);
             background-size: cover;
             margin: 0% auto;
+            
+
+            .contacto__rellenar {
+                @include flex (space-evenly, center);
+                padding: 20px;
+            }
 
             .main__form {
                 margin-left: 20px;
+
             }
 
             .main__text__contacto {
                 @include texto;
                 color: rgb(35, 5, 36);
-                padding: 5px;
                 background-color: #c7388b;
                 border: 2px solid black;
+                padding: 10px;
+                margin: 20px;
             }
 
             .select__product {
