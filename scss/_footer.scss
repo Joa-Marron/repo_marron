@@ -3,31 +3,70 @@
 @import "mixins";
 @import "breakpoints";
 
+// se me desborda todo
 
 footer {
-    margin: 0% auto;
+    @include flex (center, center);
     border: 3px solid #343a40;
     background-image: linear-gradient(to left, #ced4da, #da6fc8);
+    display: grid;
+    grid-template-areas: "bloque1 bloque2"
+        "bloque1 bloque2"
+        "bloque3 bloque3";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3 1fr);
+    column-gap: 5px;
+    row-gap: 5px;
+    margin: 20px;
+    width: 100%;
+    height: 100%;
+
+    section.footer__bloque1 {
+        grid-area: bloque1;
+    }
+
+    section.footer__bloque2 {
+        grid-area: bloque2;
+    }
+
+    section.footer__bloque3 {
+        grid-area: bloque3;
+    }
+
+
 
     .footer__bloque1 {
-        @include column;
+        @include flex(center, center);
+        margin: 15px;
 
-
-        .subtitle__footer {
+        .subtitle__footer1 {
+            @include flex (center, center);
             font-family: Gracelyne;
             padding: 0%;
-            margin-top: 10px;
-            margin-bottom: 10px;
+            margin: 20px;
         }
 
         .footer__map {
+            @include flex (center, center);
             margin: 0% auto;
         }
     }
 
     .footer__bloque2 {
+        @include flex(center, center);
+        margin: 15px;
+
+        .subtitle__footer2 {
+            @include flex (center, center);
+            font-family: Gracelyne;
+            padding: 0%;
+            margin: 20px;
+        }
+
+
         .link__redes {
             @include flex (center, center);
+
 
             .link__ig {
                 height: 150px;
@@ -43,10 +82,11 @@ footer {
         }
     }
 
+
     .footer__bloque3 {
-    
+
         .link__footer {
-            @include flex (space-evenly,center);
+            @include flex (space-evenly, center);
             background-color: #03071e;
 
             .link {

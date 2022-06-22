@@ -57,8 +57,9 @@ main {
             }
         }
 
-        .video__cat {
-            border: 3px solid rgb(19, 0, 18)
+        .main__play {
+            border: 2px solid rgb(19, 0, 18);
+            box-shadow: 10px 10px 5px rgb(161, 154, 154);
         }
     }
 
