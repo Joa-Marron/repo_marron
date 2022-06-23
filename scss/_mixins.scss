@@ -1,5 +1,5 @@
 @mixin contenedor {
-    border: 10px solid rgb(172, 23, 97);
+    border: 10px solid rgb(106, 0, 116);
     max-height: 100%;
     max-width: 50%;
     justify-content: left;
@@ -19,11 +19,12 @@
 }
 
 @mixin texto {
-    font-family: Lovesalmon;
+    font-family: Mank;
     color: $color__texto;
     padding: 30px;
     background-image: url(../media/backgroundContenedores.jpg);
-    background-size: 30%;
+    background-size: cover;
+    border: 2px solid rgba(19, 1, 20, 0.842);
 }
 
 @mixin flex ($justify, $align) {

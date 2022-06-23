@@ -11,6 +11,10 @@
   font-family: Gracelyne;
   src: url(../fonts/Gracelyne.otf); }
 
+@font-face {
+  font-family: Mank;
+  src: url(../fonts/MankSans-Medium.ttf); }
+
 header {
   background-image: linear-gradient(to left, #e0aaff, #c77dff); }
   header .logo {
@@ -40,6 +44,10 @@ header {
   font-family: Gracelyne;
   src: url(../fonts/Gracelyne.otf); }
 
+@font-face {
+  font-family: Mank;
+  src: url(../fonts/MankSans-Medium.ttf); }
+
 main .container__title {
   display: flex;
   justify-content: center;
@@ -56,51 +64,13 @@ main .container__title {
     text-align: center;
     color: #3e1f47; }
 
-main .index__bloque1 {
+main .main__carousel {
   display: flex;
-  flex-direction: column;
-  align-items: center; }
-  main .index__bloque1 .img__redondo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    border: 5px solid #030303;
-    margin: 0% auto; }
-  main .index__bloque1 .container__index {
-    border: 10px solid #ac1761;
-    max-height: 100%;
-    max-width: 50%;
-    justify-content: left;
-    padding: 10px;
-    margin-bottom: 50px; }
-    main .index__bloque1 .container__index .main__text {
-      font-family: Lovesalmon;
-      color: #3a014b;
-      padding: 30px;
-      background-image: url(../media/backgroundContenedores.jpg);
-      background-size: 30%; }
-
-main .index__bloque2 {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-  main .index__bloque2 .container__index {
-    border: 10px solid #ac1761;
-    max-height: 100%;
-    max-width: 50%;
-    justify-content: left;
-    padding: 10px;
-    margin-bottom: 50px; }
-    main .index__bloque2 .container__index .main__text {
-      font-family: Lovesalmon;
-      color: #3a014b;
-      padding: 30px;
-      background-image: url(../media/backgroundContenedores.jpg);
-      background-size: 30%; }
-  main .index__bloque2 .main__play {
-    border: 2px solid #130012;
-    box-shadow: 10px 10px 5px #a19a9a; }
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  border: 2px solid #1f011d;
+  margin: 5px; }
 
 main .interes__bloque {
   display: flex;
@@ -122,8 +92,16 @@ main .interes__bloque {
     border-radius: 50%;
     border: 5px solid #030303;
     margin: 0% auto; }
+  main .interes__bloque .main__play {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10%;
+    border: 2px solid #130012;
+    box-shadow: 10px 10px 5px #a19a9a;
+    margin: 5px; }
   main .interes__bloque .container__interes {
-    border: 10px solid #ac1761;
+    border: 10px solid #6a0074;
     max-height: 100%;
     max-width: 50%;
     justify-content: left;
@@ -132,11 +110,12 @@ main .interes__bloque {
     max-width: 100%;
     margin: 10px; }
     main .interes__bloque .container__interes .main__text {
-      font-family: Lovesalmon;
-      color: #3a014b;
+      font-family: Mank;
+      color: #621d85;
       padding: 30px;
       background-image: url(../media/backgroundContenedores.jpg);
-      background-size: 30%; }
+      background-size: cover;
+      border: 2px solid rgba(19, 1, 20, 0.842); }
 
 main .productos__bloque {
   display: flex;
@@ -157,7 +136,7 @@ main .productos__bloque {
     height: 100%;
     width: 100%; }
   main .productos__bloque .container__productos {
-    border: 10px solid #ac1761;
+    border: 10px solid #6a0074;
     max-height: 100%;
     max-width: 50%;
     justify-content: left;
@@ -166,11 +145,12 @@ main .productos__bloque {
     width: 60%;
     margin: 10px; }
     main .productos__bloque .container__productos .main__text {
-      font-family: Lovesalmon;
-      color: #3a014b;
+      font-family: Mank;
+      color: #621d85;
       padding: 30px;
       background-image: url(../media/backgroundContenedores.jpg);
-      background-size: 30%; }
+      background-size: cover;
+      border: 2px solid rgba(19, 1, 20, 0.842); }
   main .productos__bloque .main__product {
     height: 300px;
     width: 300px;
@@ -195,7 +175,7 @@ main .pf__bloque {
     width: 500px;
     padding-top: 10px; }
   main .pf__bloque .container__pf {
-    border: 10px solid #ac1761;
+    border: 10px solid #6a0074;
     max-height: 100%;
     max-width: 50%;
     justify-content: left;
@@ -205,11 +185,12 @@ main .pf__bloque {
     justify-content: center;
     margin: 10px; }
     main .pf__bloque .container__pf .main__text {
-      font-family: Lovesalmon;
-      color: #3a014b;
+      font-family: Mank;
+      color: #621d85;
       padding: 30px;
       background-image: url(../media/backgroundContenedores.jpg);
-      background-size: 30%; }
+      background-size: cover;
+      border: 2px solid rgba(19, 1, 20, 0.842); }
 
 main .contacto__bloque {
   display: flex;
@@ -252,11 +233,12 @@ main .contacto__bloque {
     main .contacto__bloque .contenedor__contacto .main__form {
       margin-left: 20px; }
     main .contacto__bloque .contenedor__contacto .main__text__contacto {
-      font-family: Lovesalmon;
-      color: #3a014b;
+      font-family: Mank;
+      color: #621d85;
       padding: 30px;
       background-image: url(../media/backgroundContenedores.jpg);
-      background-size: 30%;
+      background-size: cover;
+      border: 2px solid rgba(19, 1, 20, 0.842);
       color: #230524;
       background-color: #c7388b;
       border: 2px solid black;
@@ -270,7 +252,7 @@ main .contacto__bloque {
       background-color: #030303; }
     main .contacto__bloque .contenedor__contacto .contacto__final {
       font-family: Gracelyne;
-      color: #3a014b; }
+      color: #621d85; }
     main .contacto__bloque .contenedor__contacto .input__contacto {
       margin: 15px;
       background-color: #83baf8;
@@ -289,6 +271,10 @@ main .contacto__bloque {
 @font-face {
   font-family: Gracelyne;
   src: url(../fonts/Gracelyne.otf); }
+
+@font-face {
+  font-family: Mank;
+  src: url(../fonts/MankSans-Medium.ttf); }
 
 footer {
   display: flex;
@@ -374,6 +360,10 @@ footer {
 @font-face {
   font-family: Gracelyne;
   src: url(../fonts/Gracelyne.otf); }
+
+@font-face {
+  font-family: Mank;
+  src: url(../fonts/MankSans-Medium.ttf); }
 
 /*------------------------------General---------------------------------*/
 * {

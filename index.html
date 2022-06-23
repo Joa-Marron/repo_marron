@@ -59,44 +59,55 @@
         <h1 class="title">Happy Paws</h1>
       </div>
 
-      <div class="index__bloque1">
-        <div>
-          <img src="./media/gala__index.jpg" alt="Perro mirando a la cámara" height="300px" width="300px"
-            class="img__redondo " />
+      <div id="carouselWithIndicators" class="carousel slide container container-fluid" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-bs-target="#carouselWithIndicators" data-bs-slide-to="1" class="active"></li>
+          <li data-bs-target="#carouselWithIndicators" data-bs-slide-to="2"></li>
+          <li data-bs-target="#carouselWithIndicators" data-bs-slide-to="3"></li>
+          <li data-bs-target="#carouselWithIndicators" data-bs-slide-to="4"></li>
+          <li data-bs-target="#carouselWithIndicators" data-bs-slide-to="5"></li>
+          <li data-bs-target="#carouselWithIndicators" data-bs-slide-to="6"></li>
+          <li data-bs-target="#carouselWithIndicators" data-bs-slide-to="7"></li>
+          
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./media/1car.jpg" class="d-block main__carousel" alt="Slide 1">
+          </div>
+          <div class="carousel-item active">
+            <img src="./media/2car.jpg" class="d-block main__carousel" alt="Slide 1">
+          </div>
+          <div class="carousel-item active">
+            <img src="./media/3car.jpg" class="d-block main__carousel" alt="Slide 1">
+          </div>
+          <div class="carousel-item active">
+            <img src="./media/4car.jpg" class="d-block main__carousel" alt="Slide 1">
+          </div>
+          <div class="carousel-item active">
+            <img src="./media/5car.jpg" class="d-block main__carousel" alt="Slide 1">
+          </div>
+          <div class="carousel-item active">
+            <img src="./media/6car.jpg" class="d-block main__carousel" alt="Slide 1">
+          </div>
+          <div class="carousel-item active">
+            <img src="./media/7car.jpg" class="d-block main__carousel" alt="Slide 1">
+          </div>
+         
         </div>
-        <div class="container__index">
-          <p class="main__text h4 container">
-            Los animales aportan emociones básicas para los pequeños de la casa, valores como la empatía, el
-            amor, respeto, responsabilidad, la fidelidad, entre otros.
-            Además, las mascotas representan
-            sentimientos de amor hacia ellos y pueden ayudar a un buen desarrollo de la autoestima.
-          </p>
-        </div>
-      </div>
-
-      <div class="index__bloque2">
-        <div class="container__index">
-          <p class="main__text h4 container">
-            El juego es fundamental desde el comienzo de la vida de nuestros animalitos. Aprenden a controlar la
-            mordida, las conductas sexuales, la conducta de caza,
-            además de cómo coordinar los movimientos, saltos y caídas. Desde Happy Paws les ofrecemos el asesoramiento
-            necesario para que nuestro amigos
-            animales
-            tengan
-            la mejor y más sana diversión.</p>
-        </div>
-        <div>
-          <iframe class="main__play" width="400" height="200" src="https://www.youtube.com/embed/jPb67j3OBT4"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
-        </div>
+        <a class="carousel-control-prev" href="#carouselWithIndicators" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">ANTERIOR</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselWithIndicators" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">SIGUIENTE</span>
+        </a>
       </div>
 
     </main>
 
 
-    <footer class="container">
+    <footer class="container-fluid">
 
       <section class="footer__bloque1">
         <p class="card-title subtitle__footer1 h4">Visitanos en funes</p>

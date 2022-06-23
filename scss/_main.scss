@@ -26,41 +26,11 @@ main {
         }
     }
 
-    .index__bloque1 {
-        @include column;
-
-        .img__redondo {
-            @include flex (center, center);
-            border-radius: 50%;
-            border: 5px solid #030303;
-            margin: 0% auto;
-        }
-
-        .container__index {
-            @include contenedor;
-
-            .main__text {
-                @include texto;
-            }
-        }
-
-    }
-
-    .index__bloque2 {
-        @include column;
-
-        .container__index {
-            @include contenedor;
-
-            .main__text {
-                @include texto;
-            }
-        }
-
-        .main__play {
-            border: 2px solid rgb(19, 0, 18);
-            box-shadow: 10px 10px 5px rgb(161, 154, 154);
-        }
+    .main__carousel{
+        @include flex (center,center);
+        height: 80vh;
+        border: 2px solid rgb(31, 1, 29);
+        margin: 5px;
     }
 
     .interes__bloque {
@@ -76,6 +46,14 @@ main {
             border: 5px solid #030303;
             margin: 0% auto;
         }
+
+        .main__play {
+            @include flex (center,center);
+            border-radius: 10%;
+            border: 2px solid rgb(19, 0, 18);
+            box-shadow: 10px 10px 5px rgb(161, 154, 154);
+            margin: 5px;
+            }
 
         .container__interes {
             @include contenedor;
