@@ -4,8 +4,10 @@
 @import "breakpoints";
 
 header {
-
-    background-image: linear-gradient(to left, #e0aaff, #c77dff);
+@include flex (center,center);
+    background-image: url(../media/backgroundnav.jpg);
+    background-size: cover;
+    border: 2px solid rgb(31, 0, 26);
 
     .logo {
         height: 100px;
@@ -25,8 +27,26 @@ header {
             border-top: 1px solid black;
 
             &:hover {
-                background-color: #ff69eb;
+                background-color: #fa55d1;
             }
+        }
+
+        .header__search {
+            margin-left: 20px;
+            margin-right: 5px;
+            border: 1px solid black;
+            
+            &:focus {
+                background-color: rgb(238, 167, 208);
+            }
+        }
+
+        .header__searchsubmit {
+            border: 1px solid rgb(233, 227, 227);
+            padding: 8px;
+            background-color: rgb(12, 1, 1);
+            color: rgb(226, 226, 225);
+
         }
     }
 }

@@ -14,15 +14,16 @@
     text-align: center;
     color: $color__subtitulo;
     padding-top: 10px;
-    border-bottom: 3px dashed rgb(185, 31, 134);
-    border-top: 3px dashed rgb(185, 31, 134);
+    border-bottom: 3px dashed rgb(77, 5, 87);
+    border-top: 3px dashed rgb(77, 5, 87);
+    
 }
 
 @mixin texto {
     font-family: Mank;
-    color: $color__texto;
+    color: rgb(235, 231, 231);
     padding: 30px;
-    background-image: url(../media/backgroundContenedores.jpg);
+    background-image: linear-gradient(to left, rgb(31, 2, 34), rgb(195, 17, 240));
     background-size: cover;
     border: 2px solid rgba(19, 1, 20, 0.842);
 }

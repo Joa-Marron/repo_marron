@@ -19,7 +19,7 @@
 <body>
   <div class="grilla">
 
-    <header>
+    <header class="border__header">
       <nav class="navbar navbar-expand-lg navbar-light nav flex h6" id="nav">
         <div class="container-fluid">
           <a class="navbar-brand" href="../index.html"><img class="logo" src="../media/logoHeader.png" alt="Logo"></a>
@@ -38,7 +38,7 @@
                 <a class="nav-link active" aria-current="page" href="productos.html">Productos</a>
               </li>
               <li>
-                <a class="nav-link" aria-current="page" href="preguntasfrecuentes.html">Preguntas frecuentes</a>
+                <a class="nav-link" aria-current="page" href="faqs.html">FAQs</a>
               </li>
               <li>
                 <a class="nav-link" aria-current="page" href="contacto.html">Contacto</a>
@@ -46,8 +46,8 @@
 
 
               <form class="form" action="">
-                <input type="text" name="" id="">
-                <input type="submit" name="" value="Buscar" id="">
+                <input type="text" name="" id="" class="header__search">
+                <input type="submit" name="" value="Buscar" class="header__searchsubmit" id="">
               </form>
             </ul>
 
@@ -78,8 +78,7 @@
           </p>
         </div>
 
-        <div>
-
+        <div class="product__flex">
           <img class="main__product" src="../media/cama1.jpeg" alt="Camita rayada en tonos rosas">
           <img class="main__product" src="../media/cama2.jpeg" alt="Camita color beige">
           <img class="main__product" src="../media/cama3.jpg" alt="Camita rectangular color marrón">
@@ -103,7 +102,7 @@
           </p>
         </div>
 
-        <div>
+        <div class="product__flex container">
           <img class="main__product" src="../media/Mordillo1.jpg"
             alt="Mordillo texturado con círculos en forma de hueso" height="250px" width="200px" />
           <img class="main__product" src="../media/Mordillo2.jpg" alt="Mordillo en forma de chupete" height="250px"
@@ -125,12 +124,10 @@
             rascador, focaliza esa necesidad en el juguete y no en tus muebles.
           </p>
         </div>
-        <div>
-          <img class="main__product" src="../media/rascador1.jpeg" alt="Rascador beige" height="250px"
-            width="200px" />
-          <img class="main__product" src="../media/rascador2.jpeg" alt="Rascador gris" height="250px"
-            width="200px" />
-          <img class="main__product" src="../media/rascador3.jpeg" alt="Rascador gris y negro" height="250px"
+        <div class="product__flex container">
+          <img class="main__product" src="../media/rascador1.jpeg" alt="Rascador con base en forma de huella y ratón colgando" height="250px" width="200px" />
+          <img class="main__product" src="../media/rascador2.jpeg" alt="Rascador con forma de tubo color camel" height="250px" width="200px" />
+          <img class="main__product" src="../media/rascador3.jpeg" alt="Rascador gris y negro con asiento para gato" height="250px"
             width="200px" />
           <img class="main__product" src="../media/rascador4.jpg" alt="Rascador con entrada en forma gato">
         </div>
@@ -139,39 +136,40 @@
     </main>
 
     <footer class="container-fluid">
-     
+
       <section class="footer__bloque1">
-        <p class="card-title subtitle__footer1 h4">Visitanos en funes</p>
-        <div class="footer__map">
-          <iframe
-          class="footer__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3349.138732169581!2d-60.816037085293935!3d-32.92093267791611!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b64daca9c3b6ad%3A0xf785ea2c86fc21d0!2sRN9%201832%2C%20Funes%2C%20Santa%20Fe!5e0!3m2!1ses-419!2sar!4v1651171652765!5m2!1ses-419!2sar"
-            width="250px" height="150px" style="border: 2px solid black;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-      </section>
-
-      <section class="footer__bloque2">
-        <div>
-          <p class="card-title subtitle__footer2 h4">Seguinos en Instagram y hacé tu pedido por whatsapp</p>
-        </div>
+        <p class="card-title subtitle__footer1 h4">Seguinos en Instagram y hacé tu pedido por whatsapp</p>
         <div class="link__redes">
-          <a href="https://www.instagram.com/happypawsfunes/" target="_blank"><img class="link__ig"
-              src="../media/logoIgTrans.png" alt="Link Instagram"></a>
-          <a href="http://api.whatsapp.com/send?phone=3413777699" target="_blank"><img class="link__wp"
-              src="../media/wpTrans.png" alt="Link de whatsapp"></a>
+          <a href="https://www.instagram.com/happypawsfunes/" target="_blank"><img class="footer__redes"
+              src="../media/ig Trans.png" alt="Link Instagram"></a>
+          <a href="http://api.whatsapp.com/send?phone=3413777699" target="_blank"><img class="footer__redes"
+              src="../media/wp Trans.png" alt="Link de whatsapp"></a>
         </div>
       </section>
-
+  
+      <section class="footer__bloque2">
+        <p class="card-title subtitle__footer2 h4">Visitanos en nuestro local de Funes.</p>
+  
+        <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3349.138732169581!2d-60.816037085293935!3d-32.92093267791611!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b64daca9c3b6ad%3A0xf785ea2c86fc21d0!2sRN9%201832%2C%20Funes%2C%20Santa%20Fe!5e0!3m2!1ses-419!2sar!4v1651171652765!5m2!1ses-419!2sar"
+          target="blank"><img class="footer__linkredes" src="../media/mapa trans.png" alt="Direccion del local"></a>
+  
+      </section>
+  
       <section class="footer__bloque3">
+        <a class="navbar-brand" href="/index.html"><img class="footer__logo" src="../media/logoHeader.png" alt="Logo"></a>
+      </section>
+  
+      <section class="footer__bloque4">
         <div class="link__footer">
-          <a href="../index.html" class="active link">Inicio</a>
-          <a href="../pages/interes.html" class="link">Interés</a></li>
-          <a href="../pages/productos.html" class="link">Productos</a></li>
-          <a href="../pages/preguntasfrecuentes.html" class="link">Preguntas frecuentes</a></li>
-          <a href="../pages/contacto.html" class="link">Contacto</a></li>
+          <a href="../index.html" class="link h8">Inicio</a>
+          <a href="../pages/interes.html" class="link h8">Interés</a></li>
+          <a href="../pages/productos.html" class="link h8">Productos</a></li>
+          <a href="../pages/faqs.html" class="link h8">FAQs</a></li>
+          <a href="../pages/contacto.html" class="link h8">Contacto</a></li>
         </div>
       </section>
     </footer>
+
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">

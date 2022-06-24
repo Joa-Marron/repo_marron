@@ -26,11 +26,40 @@ main {
         }
     }
 
-    .main__carousel{
-        @include flex (center,center);
-        height: 80vh;
-        border: 2px solid rgb(31, 1, 29);
-        margin: 5px;
+    .main__subtitle {
+        @include flex (center, center);
+        font-family: Mank;
+        color: $color__subtitulo;
+        padding: 20px;
+        border: 2px solid rgb(68, 7, 68);
+    }
+
+    .main__carousel {
+        @include flex (center, center);
+        height: 500px;
+        width: 600px;
+        border: 3px solid rgb(14, 1, 13);
+        margin: 10px;
+    }
+
+    .main__btn {
+        @include column;
+        display: flex;
+        flex-wrap: wrap;
+        height: 100px;
+        width: 100px;
+        padding: 10px;
+        margin: 15px;
+        text-align: center;
+        margin: 10px;
+
+        a {
+            font-family: Mank;
+            color: #940199;
+            text-transform: uppercase;
+            border-radius: 5px;
+            text-decoration: none;
+        }
     }
 
     .interes__bloque {
@@ -48,17 +77,17 @@ main {
         }
 
         .main__play {
-            @include flex (center,center);
-            border-radius: 10%;
+            @include flex (center, center);
             border: 2px solid rgb(19, 0, 18);
             box-shadow: 10px 10px 5px rgb(161, 154, 154);
             margin: 5px;
-            }
+        }
 
         .container__interes {
             @include contenedor;
             max-width: 100%;
             margin: 10px;
+
             .main__text {
                 @include texto;
             }
@@ -87,23 +116,28 @@ main {
             }
         }
 
-        .main__product {
-            height: 300px;
-            width: 300px;
-            margin: 10px;
-            border: 2px solid black;
-            box-shadow: 10px 10px 5px rgb(161, 154, 154);
+        .product__flex {
+            @include flex (space-evenly, center);
+            padding: 20px;
+            flex-wrap: wrap;
+
+            .main__product {
+                height: 250px;
+                width: 250px;
+                margin: 10px;
+                border: 2px solid black;
+                box-shadow: 10px 10px 5px rgb(161, 154, 154);
+            }
         }
     }
 
     .pf__bloque {
         @include column;
 
+
         .main__subtitle__pf {
             @include subtitulo;
-            height: 80px;
-            width: 500px;
-            padding-top: 10px;
+            padding: 10px;
         }
 
         .container__pf {
@@ -118,8 +152,8 @@ main {
         }
     }
 
-    .contacto__bloque {
-        @include column;
+    .contacto__bloque1 {
+        @include flex (center, center);
 
         .contacto__bloque__presentacion {
             @include column;
@@ -128,6 +162,7 @@ main {
             padding: 20px;
             border: 4px solid rgb(20, 3, 3);
             background-image: url(../media/backgroundGala.jpg);
+            background-size: cover;
             width: 500px;
             height: 400px;
             margin: 20px;
@@ -135,43 +170,58 @@ main {
             .main__subtitle {
                 @include subtitulo;
             }
+
+            .contacto__perro {
+                margin: 20px;
+                border: 1px solid rgb(10, 1, 12)
+            }
+        }
+    }
+
+    .contacto__bloque2 {
+        @include flex (center, center);
+
+        .contacto__bloque2a {
+            .bloque__form {
+                @include flex (center, center);
+                border: 5px solid rgb(12, 4, 8);
+                background-image: url(../media/backgroundContacto.jpg);
+                background-size: cover;
+                margin: 0% auto;
+
+                .contacto__rellenar {
+                    @include flex (center, center);
+                    padding: 20px;
+
+                    .main__form {
+                        @include column;
+                        margin-left: 20px;
+                    }
+
+                    .main__text__contacto {
+                        font-family: Mank;
+                        color: rgb(53, 3, 63);
+                        background-image: linear-gradient(to left, rgb(209, 134, 219), rgb(132, 74, 134));
+                        padding: 10px;
+                        border: 2px solid rgb(22, 22, 22);
+                        margin: 20px;
+                    }
+
+                    .main__desplegable {
+                        font-family: Gracelyne;
+                        color: navajowhite;
+                        background-color: #030303;
+                    }
+                }
+            }
         }
 
-        .contenedor__contacto {
-            @include column;
-            border: 5px solid rgb(12, 4, 8);
-            background-image: url(../media/backgroundContacto.jpg);
-            background-size: cover;
-            margin: 0% auto;
-            
-
-            .contacto__rellenar {
-                @include flex (space-evenly, center);
-                padding: 20px;
-            }
+        .contacto__bloque2b {
+        .contacto__nl {
 
             .main__form {
+                @include column;
                 margin-left: 20px;
-
-            }
-
-            .main__text__contacto {
-                @include texto;
-                color: rgb(35, 5, 36);
-                background-color: #c7388b;
-                border: 2px solid black;
-                padding: 10px;
-                margin: 20px;
-            }
-
-            .select__product {
-                width: 250px;
-            }
-
-            .main__desplegable {
-                font-family: Gracelyne;
-                color: navajowhite;
-                background-color: #030303;
             }
 
             .contacto__final {
@@ -187,6 +237,11 @@ main {
                 padding: 10px;
             }
 
+            .select__product {
+                width: 250px;
+            }
         }
     }
+}
+
 }
