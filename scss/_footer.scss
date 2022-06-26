@@ -105,7 +105,7 @@ footer {
         .link__footer {
             @include flex (space-evenly, center);
             background-color: #03071e;
-            padding: 15px;
+            padding: 5px;
 
             .link {
                 text-decoration: none;

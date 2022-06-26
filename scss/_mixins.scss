@@ -22,10 +22,11 @@
 @mixin texto {
     font-family: Mank;
     color: rgb(235, 231, 231);
-    padding: 30px;
+    padding: 10px;
     background-image: linear-gradient(to left, rgb(31, 2, 34), rgb(195, 17, 240));
     background-size: cover;
     border: 2px solid rgba(19, 1, 20, 0.842);
+    margin: 5px;
 }
 
 @mixin flex ($justify, $align) {
